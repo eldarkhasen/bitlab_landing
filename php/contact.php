@@ -30,7 +30,7 @@ if($course == 4){
 }else if($course == 3){
     $course_name = "Python для студентов";
 }else if($course==2){
-    $course_name = "Python для студентов";
+    $course_name = "Java для студентов";
 }
 $e_body = "Вам пришла заявка от $name. На курс: .$course_name. Номер контакта." . PHP_EOL . PHP_EOL;
 $e_content = "\"$phone\"" . PHP_EOL . PHP_EOL;
