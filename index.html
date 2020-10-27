@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>BITLAB Academy | Курсы программирования Алматы</title>
+	<title>BITLAB Academy | Курсы программирования для студентов</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.min.css">
@@ -13,542 +13,607 @@
 </head>
 
 <body>
-	<div class="wrapper">
-		<nav class="nav">
-	<div class="nav__content">
-		<a href="/" class="nav__logo">
-			<img src="img/logo.svg" alt="Logo">
-		</a>
-		<a href="#" class="btn">Войти</a>
-	</div>
-</nav>
-		<main class="page">
+<div class="wrapper">
+	<nav class="nav">
+		<div class="nav__content">
+			<a href="/" class="nav__logo">
+				<img src="img/logo.svg" alt="Logo">
+			</a>
+			<a href="#" class="btn">Войти</a>
+		</div>
+	</nav>
+	<main class="page">
 
-			<div id="record" class="modal record-modal">
-   <button class="modal__btn close-btn">
-      <i class="icon-ui icon-ui__cross"></i>
-   </button>
-   <div class="modal-content record-modal__content">
-      <h1 class="record-modal__content_title">
-         Оставьте заявку и мы проконсультируем вас
-      </h1>
-      <form class="record-modal__content_form">
-         <p class="dn error-text"></p>
-         <input name="name" type="text" placeholder="Ваше имя..." class="light">
-         <select name="course" class="light">
-            <option value="Not selected" disabled selected>Выберите курс</option>
-            <option value="1">C++ basics</option>
-            <option value="2">Java basics</option>
-            <option value="3">Python basics</option>
-         </select>
-         <input name="phone" type="tel" placeholder="+7" class="light">
-         <p class="record-modal__content_caution">
-            *Оставляя заявку, Вы даете согласие на обработку персональных данных
-         </p>
-         <button type="button" onclick="toSendRequest()" name="send" class="btn btn__rounded md">
-            Отправить
-         </button>
-      </form>
-   </div>
-</div>
-
-			<header class="header main-bg">
-				<div class="header__content container ph-lg">
-					<p class="header__uptitle">Курсы программирования</p>
-					<h1 class="header__title">Научись программировать с нуля до уровня профи</h1>
-					<p class="header__description">В кратчайшие сроки от экспертов в IT образовании</p>
-					<a href="" class="btn btn__rounded lg">Смотреть курсы</a>
-				</div>
-			</header>
-
-			<section class="section p-lg">
-				<div class="section__flex_center container">
-					<h1 class="section__title text-center">Ближайшие курсы</h1>
-					<p class="section__subtitle text-center">Выбери себе подходящий курс</p>
-					<div class="section__courses">
-						<div class="section__courses_elem section-course">
-							<div class="section-course__icon"><img src="img/courses/python.png" alt="Python Icon"></div>
-							<h1 class="section-course__title">Python Online</h1>
-							<p class="section-course__subtitle">Основы кодинга на Python</p>
-							<h2 class="section-course__price">30 000 ₸/мес</h2>
-							<ul class="section-course__info">
-								<li class="section-course__info_elem duration">
-									<i class="icon icon-courses icon-courses__duration"></i>
-									Длительность:&nbsp;<span class="bold">8 недель</span>
-								</li>
-								<li class="section-course__info_elem">
-									<i class="icon icon-courses icon-courses__level"></i>
-									Уровень:&nbsp;<span class="bold">начальный</span>
-								</li>
-								<li class="section-course__info_elem">
-									<i class="icon icon-courses icon-courses__start"></i>
-									Старт:&nbsp;<span class="bold">19 октября</span>
-								</li>
-								<li class="section-course__info_elem">
-									<i class="icon icon-courses icon-courses__time"></i>
-									<span class="bold">Пн-Чт 19:00-20:30</span>
-								</li>
-								<li class="section-course__info_elem">
-									<i class="icon icon-courses icon-courses__places"></i>
-									Осталось:&nbsp;<span class="bold">0 мест</span>
-								</li>
-							</ul>
-
-							<p class="section-course__program" hidden data-course="python">
-								Программа курса Python Online
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. At provident aspernatur ex soluta
-								numquam sed, nam laboriosam odit id hic itaque, corporis, ipsa explicabo rerum repudiandae eaque
-								sequi nulla ut!
-							</p>
-							
-							<button class="btn btn__rounded md" data-toggle="modal" data-modal="course-details">
-								Подробнее
-							</button>
-						</div>
-
-						<div class="section__courses_elem section-course">
-							<div class="section-course__icon"><img src="img/courses/web-intensive.png"
-									alt="Web Intensive Icon">
-							</div>
-							<h1 class="section-course__title">WEB Intensive</h1>
-							<p class="section-course__subtitle">Основы кодинга на Java</p>
-							<h2 class="section-course__price">от 40 000 ₸/мес</h2>
-							<ul class="section-course__info">
-								<li class="section-course__info_elem">
-									<i class="icon icon-courses icon-courses__duration"></i>
-									Длительность:&nbsp;<span class="bold">8 недель</span>
-								</li>
-								<li class="section-course__info_elem">
-									<i class="icon icon-courses icon-courses__level"></i>
-									Уровень:&nbsp;<span class="bold">начальный</span>
-								</li>
-								<li class="section-course__info_elem">
-									<i class="icon icon-courses icon-courses__start"></i>
-									Старт:&nbsp;<span class="bold">28 октября</span>
-								</li>
-								<li class="section-course__info_elem">
-									<i class="icon icon-courses icon-courses__time"></i>
-									<span class="bold">Пн-Ср-Пт 19:00-20:30</span>
-								</li>
-								<li class="section-course__info_elem">
-									<i class="icon icon-courses icon-courses__places"></i>
-									Осталось:&nbsp;<span class="bold">1 мест</span>
-								</li>
-							</ul>
-							<p class="section-course__program" hidden data-course="Web Intesive">
-								Программа курса Web intesive
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. At provident aspernatur ex soluta
-								numquam sed, nam laboriosam odit id hic itaque, corporis, ipsa explicabo rerum repudiandae eaque
-								sequi nulla ut!
-							</p>
-							<button class="btn btn__rounded md" data-toggle="modal" data-modal="course-details">
-								Подробнее
-							</button>
-						</div>
-
-						<div class="section__courses_elem section-course">
-							<div class="section-course__icon"><img src="img/courses/javase.png" alt="Java SE Icon"></div>
-							<h1 class="section-course__title">Java SE Оффлайн</h1>
-							<p class="section-course__subtitle">Основы кодинга на Java</p>
-							<h2 class="section-course__price">50 000 ₸/мес</h2>
-							<ul class="section-course__info">
-								<li class="section-course__info_elem">
-									<i class="icon icon-courses icon-courses__duration"></i>
-									Длительность:&nbsp;<span class="bold">8 недель</span>
-								</li>
-								<li class="section-course__info_elem">
-									<i class="icon icon-courses icon-courses__level"></i>
-									Уровень:&nbsp;<span class="bold">начальный</span>
-								</li>
-								<li class="section-course__info_elem">
-									<i class="icon icon-courses icon-courses__start"></i>
-									Старт:&nbsp;<span class="bold">29 октября</span>
-								</li>
-								<li class="section-course__info_elem">
-									<i class="icon icon-courses icon-courses__time"></i>
-									<span class="bold">Вт-Чт-Сб 19:00-20:30</span>
-								</li>
-								<li class="section-course__info_elem">
-									<i class="icon icon-courses icon-courses__places"></i>
-									Осталось:&nbsp;<span class="bold">5 мест</span>
-								</li>
-							</ul>
-							<p class="section-course__program" hidden data-course="Java Standard">
-								Программа курса Java SE Оффлайн
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. At provident aspernatur ex soluta
-								numquam sed, nam laboriosam odit id hic itaque, corporis, ipsa explicabo rerum repudiandae eaque
-								sequi nulla ut!
-							</p>
-							<button class="btn btn__rounded md" data-toggle="modal" data-modal="course-details">
-								Подробнее
-							</button>
-						</div>
-					</div>
-					<a href="#" class="btn btn__rounded lg">Посмотреть все курсы</a>
-
-					<div id="course-details" class="modal section-course-modal">
-   <button class="modal__btn close-btn">
-      <i class="icon-ui icon-ui__cross"></i>
-   </button>
-   <div class="modal-content section-course-modal__content">
-      <h1 class="section-course-modal__content_title">Программа курса</h1>
-      <p class="section-course-modal__content_description"></p>
-      <form class="section-course-modal__content_form">
-         <h2 class="section-course-modal__content_subtitle">Запишись на курс прямо сейчас</h2>
-         <p class="dn error-text"></p>
-         <input name="name" type="text" placeholder="Ваше имя..." class="light">
-         <input name="phone" type="tel" placeholder="+7" class="light">
-         <input name="course" type="hidden" value="Not Selected">
-         <p class="record-modal__content_caution">
-            *Оставляя заявку, Вы даете согласие на обработку персональных данных
-         </p>
-         <button type="button" onclick="toSendRequest()" name="send" class="btn btn__rounded md">
-            Отправить
-         </button>
-      </form>
-   </div>
-</div>
-				</div>
-			</section>
-
-			<section class="section section_light">
-				<div class="section-program container">
-					<div class="section-program__img">
-						<img src="img/bg-images/homepage-program-right.png" alt="Student" class="right-point">
-						<img src="img/bg-images/home-page-program-down.png" alt="Student" class="bottom-point">
-					</div>
-					<div class="section-program__content">
-						<h1 class="section-program__content_title">Спец программмы для студентов</h1>
-						<p class="section-program__content_subtitle">Онлайн курсы для помощи в учебе</p>
-						<p class="section-program__content_info">60+ успешно закрытых сессий</p>
-						<a href="details.html" class="btn btn__rounded lg">Подробнее о программе</a>
-					</div>
-				</div>
-			</section>
-
-			<section class="section p-lg">
-				<div class="section-pluses container ph-lg">
-					<h1 class="section__title">Почему выгодно обучаться у нас?</h1>
-					<p class="section__subtitle">Причины, по которым люди выбирают нас</p>
-					<div class="section-pluses__list">
-						<div class="section-pluses__elem">
-							<div class="section-pluses__elem_img"><img src="img/icons/calendar.svg" alt="Online"></div>
-							<h1 class="section-pluses__elem_title">Онлайн платформа для каждого студента</h1>
-							<p class="section-pluses__elem_description">Вы не пропустите НИЧЕГО! Весь материал и видеоуроки
-								будут у вас в доступе! Даже после окончания курсов, доступ у вас
-								остается навсегда.</p>
-						</div>
-						<div class="section-pluses__elem">
-							<div class="section-pluses__elem_img"><img src="img/icons/goal.svg" alt="Online"></div>
-							<h1 class="section-pluses__elem_title">Тщательно проработанные курсы</h1>
-							<p class="section-pluses__elem_description">Наша команда постоянно совершенствует контент курсов по
-								программированию.</p>
-						</div>
-						<div class="section-pluses__elem">
-							<div class="section-pluses__elem_img"><img src="img/icons/discount.svg" alt="Online"></div>
-							<h1 class="section-pluses__elem_title">Гарантия качества</h1>
-							<p class="section-pluses__elem_description">Мы гарантируем качественное обучение! Вернем деньги в
-								течение первых 3-х занятий, если курс вам не подходит!</p>
-						</div>
-						<div class="section-pluses__elem">
-							<div class="section-pluses__elem_img"><img src="img/icons/motivation.svg" alt="Online"></div>
-							<h1 class="section-pluses__elem_title">Мы те, кто умеет обучать и мотивировать</h1>
-							<p class="section-pluses__elem_description">Мы действующие программисты и профессора, которые умеют
-								преподавать, давать мотивацию и подносить информацию!</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="section p-md">
-				<div class="section-video container ph-lg">
-					<h1 class="section__title text-center">Посмотри в живую и убедись в этом</h1>
-					<p class="section__subtitle text-center">Преподаватель учит как и что делать, используя свой</p>
-					<iframe class="section-video__player" src="https://www.youtube.com/embed/c83-7MR_aL0" frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen>
-					</iframe>
-				</div>
-			</section>
-
-			<section class="section section_light p-sm">
-				<div class="section__flex_center container">
-					<h1 class="section__title text-center">Интересно?</h1>
-					<p class="section__subtitle text-center">
-						Тогда оставь заявку и будь вместе с такими же единомышленниками
+		<div id="record" class="modal record-modal">
+			<button class="modal__btn close-btn">
+				<i class="icon-ui icon-ui__cross"></i>
+			</button>
+			<div class="modal-content record-modal__content">
+				<h1 class="record-modal__content_title">
+					Оставьте заявку и мы проконсультируем вас
+				</h1>
+				<form class="record-modal__content_form">
+					<p class="dn error-text"></p>
+					<input name="name" type="text" placeholder="Ваше имя..." class="light">
+					<select name="course" class="light">
+						<option value="Not selected" disabled selected>Выберите курс</option>
+						<option value="1">C++ basics</option>
+						<option value="2">Java basics</option>
+						<option value="3">Python basics</option>
+					</select>
+					<input name="phone" type="tel" placeholder="+7" class="light">
+					<p class="record-modal__content_caution">
+						*Оставляя заявку, Вы даете согласие на обработку персональных данных
 					</p>
-					<button class="btn btn__rounded lg mt-md" data-toggle="modal" data-modal="record">
-						Оставить заявку
+					<button type="button" onclick="toSendRequest()" name="send" class="btn btn__rounded md">
+						Отправить
 					</button>
-				</div>
-			</section>
+				</form>
+			</div>
+		</div>
+		<div id="contact-result"></div>
+		<div id="loader" class="dn" title="2">
+			<svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg"
+				 xmlns:xlink="http://www.w3.org/1999/xlink"
+				 x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;"
+				 xml:space="preserve">
+      <path fill="#000"
+			d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+         <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25"
+						   dur="0.6s" repeatCount="indefinite"/>
+      </path>
+   </svg>
+		</div>
 
-			<section class="section p-lg">
-				<div class="section-company container">
-					<h1 class="section__title text-center">Где работают наши выпускники</h1>
-					<div class="section-company__list">
-						<div class="section-company__elem"><img src="img/companies/tele2.png" alt="Tele 2"></div>
-						<div class="section-company__elem"><img src="img/companies/kase.png" alt="KASE"></div>
-						<div class="section-company__elem"><img src="img/companies/mersys.png" alt="MERSYS"></div>
-						<div class="section-company__elem"><img src="img/companies/dar.png" alt="DAR"></div>
-						<div class="section-company__elem"><img src="img/companies/kolesa.png" alt="КОЛЕСА КРЫША МАРКЕТ">
-						</div>
-						<div class="section-company__elem"><img src="img/companies/prime-source.png" alt="Prime Source"></div>
-						<div class="section-company__elem"><img src="img/companies/choco-family.png" alt="Choco Family"></div>
-						<div class="section-company__elem"><img src="img/companies/altyn.png" alt="Altyn I"></div>
-						<div class="section-company__elem"><img src="img/companies/aviata.png" alt="Aviata.kz"></div>
-						<div class="section-company__elem"><img src="img/companies/rg-brands.png" alt="RG Brands"></div>
-						<div class="section-company__elem"><img src="img/companies/alsi.png" alt="ALSI"></div>
-						<div class="section-company__elem"><img src="img/companies/kaspi.svg" alt="Kaspi"></div>
-						<div class="section-company__elem"><img src="img/companies/eurasian-bank.png" alt="Eurasian Bank">
-						</div>
+		<header class="header details-bg">
+			<div class="header__content container ph-lg">
+				<h1 class="header__title">
+					Курсы программирования для студентов, с гаранитей возврата средств
+				</h1>
+				<p class="header__subtitle">Поможем подготовиться к экзаменам или вернем вам деньги
+				</p>
+				<p class="header__description">*Возврат осуществляется только в случае полного прохождения курса и
+					провала на сессии
+				</p>
+				<button class="btn btn__rounded lg mt-md" data-toggle="modal" data-modal="record">
+					Бесплатная консультация
+				</button>
+			</div>
+		</header>
+
+		<section class="section p-md">
+			<div class="section container">
+				<h1 class="section__title text-center">Как проходит обучение</h1>
+				<p class="section__subtitle text-center" id="section-howto__subtitle"></p>
+				<div class="section-howto__subtitles">
+					<p data-screen="lecture">
+						Живые лекции с лектором в онлайне
+					</p>
+					<p data-screen="practice">
+						Отдельный блок для практики, чтобы закрепить полученную информацию
+					</p>
+					<p data-screen="support">
+						Ментор проконсультирует вас и даст совет, как изменить что-то, исходя из вашей ситуации
+					</p>
+				</div>
+				<div class="section-howto">
+					<div class="section-howto__btns">
+						<button class="section-howto__btn active" data-screen="lecture">Лекции</button>
+						<button class="section-howto__btn" data-screen="practice">Практика</button>
+						<button class="section-howto__btn" data-screen="support">Поддержка</button>
+						<div class="section-howto__underline" id="section-howto-underline"></div>
 					</div>
-				</div>
-			</section>
-
-			<section class="section p-md">
-				<div class="section-reviews container ph-lg">
-					<h1 class="section__title text-center">Отзывы студентов</h1>
-					<div class="section-reviews__slider">
-
-						<div class="section-reviews__column">
-							<div class="section-reviews__elem">
-								<p class="section-reviews__elem_text">
-									Ранее я работал UX/UI дизайнером, и с самого 9 класса хотел уметь
-									программировать, и работать над крутыми проектами, и
-									BITLAB мне с этим помогли. После окончания учебы, я получил множество
-									предложении по работе. И на данный момент работаю
-									в айти компании Pillowz.kz, моя должность backend Python developer.
-								</p>
-								<div class="section-reviews__elem_person">
-									<div class="section-reviews__elem_info">
-										<h1 class="section-reviews__elem_name">Темирлан Зарлыков</h1>
-										<p class="section-reviews__elem_job">Разработчик Pillowz.kz</p>
-									</div>
-									<div class="section-reviews__elem_avatar">
-										<img src="img/avatars/temirlan-zarlykov.png" alt="Темирлан Зарлыков">
-									</div>
-								</div>
+					<div class="section-howto__screens">
+						<div class="section-howto__slider" id="section-howto-slider">
+							<div class="section-howto__screen active" data-screen="lecture">
+								<img src="img/howto/lecture.png" alt="Лекции">
 							</div>
-
-							<div class="section-reviews__elem">
-								<p class="section-reviews__elem_text">
-									Очень благодарен тренерам BITLAB, ведь именно в этой команде очень интенсивно и разносторонне
-									обучали основным аспектам
-									программирования; создали фундамент, опираясь на который я с каждым днем уверенно продолжаю
-									развиваться; мне помогли
-									научиться мыслить как настоящий разработчик.
-								</p>
-								<div class="section-reviews__elem_person">
-									<div class="section-reviews__elem_info">
-										<h1 class="section-reviews__elem_name">Асылхан Райсханов</h1>
-										<p class="section-reviews__elem_job">iOS-разработчик «Колеса Крыша Маркет»</p>
-									</div>
-									<div class="section-reviews__elem_avatar">
-										<img src="img/avatars/asylkhan-raiskhanov.png" alt="Асылхан Райсханов">
-									</div>
-								</div>
+							<div class="section-howto__screen" data-screen="practice">
+								<img src="img/howto/practice.png" alt="Практика">
+							</div>
+							<div class="section-howto__screen" data-screen="support">
+								<img src="img/howto/player.png" alt="Поддержка">
 							</div>
 						</div>
-
-						<div class="section-reviews__column">
-							<div class="section-reviews__elem">
-								<p class="section-reviews__elem_text">
-									По окончанию курсов я получил несколько предложений о работе, и в данный момент я работаю
-									разработчиком ПО в Prime
-									Source. Я очень рад, что выбрал именно школу BITLAB, все что вам нужно, это жгучее желание,
-									во всем остальном
-									профессиональные преподаватели школы вам помогут!
-								</p>
-								<div class="section-reviews__elem_person">
-									<div class="section-reviews__elem_info">
-										<h1 class="section-reviews__elem_name">Искандер Сапиев</h1>
-										<p class="section-reviews__elem_job">Java разработчик Prime Source</p>
-									</div>
-									<div class="section-reviews__elem_avatar">
-										<img src="img/avatars/iskander-sapiev.png" alt="Искандер Сапиев">
-									</div>
-								</div>
-							</div>
-
-							<div class="section-reviews__elem">
-								<p class="section-reviews__elem_text">
-									Став частью команды BITLAB,
-									я получил не только очень крепкий фундамент и отличные знания, но и желание и мотивацию
-									развиваться и стать лучше,
-									которое не угасает по сей день. Я премного благодарен тренерам за знания, опыт и за ту самую
-									атмосферу, которая помогла
-									мне стать профессионалом в своей сфере.
-								</p>
-								<div class="section-reviews__elem_person">
-									<div class="section-reviews__elem_info">
-										<h1 class="section-reviews__elem_name">Мухаммед Иса</h1>
-										<p class="section-reviews__elem_job">
-											Android разработчик Chocotravel холдинга ChocoFamily.
-										</p>
-									</div>
-									<div class="section-reviews__elem_avatar">
-										<img src="img/avatars/muhammed-isa.png" alt="Мухаммед Иса">
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="section-reviews__column">
-							<div class="section-reviews__elem">
-								<p class="section-reviews__elem_text">
-									Благодаря BITLAB я научился поднимать проекты, строить архитектуры, и просто писать код.
-									Самый главный навык который я
-									получил это мышление программиста. Это и поспособствовало тому, что уже через 2 месяца меня
-									взяли на работу.
-								</p>
-								<div class="section-reviews__elem_person">
-									<div class="section-reviews__elem_info">
-										<h1 class="section-reviews__elem_name">Айдын Мамырбаев</h1>
-										<p class="section-reviews__elem_job">Java разработчик АО "Сбербанк"</p>
-									</div>
-									<div class="section-reviews__elem_avatar">
-										<img src="img/avatars/aidyn-mamyrbaev.png" alt="Айдын Мамырбаев">
-									</div>
-								</div>
-							</div>
-
-							<div class="section-reviews__elem">
-								<p class="section-reviews__elem_text">
-									Я мечтал стать программистом, но не думал что поначалу будет так трудно. Во всем этом
-									разобраться мне помогли тренера
-									BITLAB. Интересные уроки, много хороших заданий и разного рода мотивация дали мне возможность
-									расширить свой багаж
-									знаний и понять, что программирование - это действительно моё.
-								</p>
-								<div class="section-reviews__elem_person">
-									<div class="section-reviews__elem_info">
-										<h1 class="section-reviews__elem_name">Рауан Султанбай</h1>
-										<p class="section-reviews__elem_job">Веб-разработчик TOO "Bilim Media Group".</p>
-									</div>
-									<div class="section-reviews__elem_avatar">
-										<img src="img/avatars/rauan-sultanbai.png" alt="Рауан Султанбай">
-									</div>
-								</div>
-							</div>
-						</div>
-
+						<button class="section-howto__btn-expand" data-toggle="modal"
+								data-modal="section-howto-fullscreen"
+								data-modal-type="fullscreen-img">
+							<i class="icon-ui icon-ui__expand"></i>
+							<span class="section-howto__btn-expand_text">На весь экран</span>
+						</button>
 					</div>
-				</div>
-			</section>
 
-			<section class="section section_light p-sm">
-				<div class="section__flex_center container">
-					<h1 class="section__title text-center title-md">Хочешь также? Оставь заявку и мы расскажем как!</h1>
-					<button class="btn btn__rounded lg mt-md" data-toggle="modal" data-modal="record">
-						Оставить заявку
-					</button>
-				</div>
-			</section>
-
-			<section class="section p-lg">
-				<div class="section-trainers container">
-					<h1 class="section__title text-center title-md">
-						Мы не просто школа программирования, мы академия с глобальной целью
-						<span class="section__title_mark">
-							стать фабрикой крутых программистов!
-						</span>
-					</h1>
-					<div class="section-trainers__list">
-						<div class="section-trainers__elem">
-							<div class="section-trainers__elem_avatar">
-								<img src="img/avatars/Ilyas.png" alt="Ильяс Жуанышев">
-							</div>
-							<h1 class="section-trainers__elem_name">Ильяс Жуанышев</h1>
-							<p class="section-trainers__elem_subjects">Java SE, Java EE, PHP</p>
-						</div>
-						<div class="section-trainers__elem">
-							<div class="section-trainers__elem_avatar">
-								<img src="img/avatars/Eldar.png" alt="Елдар Хасен">
-							</div>
-							<h1 class="section-trainers__elem_name">Елдар Хасен</h1>
-							<p class="section-trainers__elem_subjects">Java SE, Java EE, PHP, Laravel Framework</p>
-						</div>
-						<div class="section-trainers__elem">
-							<div class="section-trainers__elem_avatar">
-								<img src="img/avatars/asylkhan-aldanazar.png" alt="Асылхан Алданазар">
-							</div>
-							<h1 class="section-trainers__elem_name">Асылхан Алданазар</h1>
-							<p class="section-trainers__elem_subjects">Python, Django, Javascript, Java, C++</p>
-						</div>
+					<div id="section-howto-fullscreen" class="modal">
+						<button class="modal__btn close-btn">
+							<i class="icon-ui icon-ui__cross"></i>
+						</button>
+						<img class="section-howto-fullscreen__img modal-content" src="img/howto/lecture.png"
+							 alt="Fullscreen Img">
 					</div>
-				</div>
-			</section>
 
-			<section class="section p-md section-knowledge">
-				<div class="section__flex_center container">
-					<h1 class="section__title text-center title-md">Знания - это актив, который невозможно потерять.</h1>
-					<button class="btn btn__rounded lg mt-md" data-toggle="modal" data-modal="record">
-						Оставить заявку
-					</button>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section class="section p-lg">
-				<div class="section-contacts container">
-					<div class="section-contacts__info">
-						<h1 class="section__title">Наши контакты</h1>
-						<ul class="section-contacts__list">
-							<li class="section-contacts__elem">
-								<i class="icon icon-contacts icon-contacts__mail"></i>
-								<a href="mailto:bitlabacademy@gmail.com">bitlabacademy@gmail.com</a>
+		<section class="section p-lg">
+			<div class="section__flex_center container">
+				<h1 class="section__title text-center">Ближайшие курсы</h1>
+				<p class="section__subtitle text-center">Выбери себе подходящий курс</p>
+				<div class="section__courses">
+
+					<div class="section__courses_elem section-course">
+						<div class="section-course__icon"><img src="img/courses/cpp.png" alt="Java SE Icon"></div>
+						<h1 class="section-course__title">C++ basics</h1>
+						<p class="section-course__subtitle">Основы алгоритмизации</p>
+						<h2 class="section-course__price">20 000 ₸/мес</h2>
+						<ul class="section-course__info">
+							<li class="section-course__info_elem">
+								<i class="icon icon-courses icon-courses__duration"></i>
+								Длительность:&nbsp;<span class="bold">4 недели</span>
 							</li>
-							<li class="section-contacts__elem">
-								<i class="icon icon-contacts icon-contacts__phone"></i>
-								<a href="tel:77479822311">+7 (747) 982 23 11</a>
+							<li class="section-course__info_elem">
+								<i class="icon icon-courses icon-courses__level"></i>
+								Уровень:&nbsp;<span class="bold">начальный</span>
 							</li>
-							<li class="section-contacts__elem">
-								<i class="icon icon-contacts icon-contacts__phone"></i>
-								<a href="tel:77000700101">+7 (700) 070 01 01</a>
+							<li class="section-course__info_elem">
+								<i class="icon icon-courses icon-courses__start"></i>
+								Старт:&nbsp;<span class="bold">29 октября</span>
 							</li>
-							<li class="section-contacts__elem">
-								<i class="icon icon-contacts icon-contacts__location"></i>
-								г. Алматы, ул.Айманова 126, 6-ой этаж
+							<li class="section-course__info_elem">
+								<i class="icon icon-courses icon-courses__time"></i>
+								<span class="bold">Вт-Чт-Сб 19:00-20:30</span>
+							</li>
+							<li class="section-course__info_elem">
+								<i class="icon icon-courses icon-courses__places"></i>
+								Количество сутдентов:&nbsp;<span class="bold">5-6</span>
 							</li>
 						</ul>
+						<p class="section-course__program" hidden data-course="3">
+							С++ - это отличный язык для изучения алгоритмизации.
+							<br>
+							Вы изучите следующие темы: условные операторы, циклы for/while/do-while, массивы,
+							многомерные массивы, функции, рекурсия и написание собственных алгоритмов.
+							<br>
+							Все темы будут закрепляться мощной практикой, которую мы подготовили специально для вас!
+							Разберем популярные задачи и методы применения алгоритмов для их решения!
+						</p>
+						<button class="btn btn__rounded md" data-toggle="modal" data-modal="course-details">
+							Подробнее
+						</button>
 					</div>
-					<div class="section-contacts__map">
-						<img src="img/map.png" alt="Map">
+
+					<div class="section__courses_elem section-course">
+						<div class="section-course__icon"><img src="img/courses/python.png" alt="Python Icon"></div>
+						<h1 class="section-course__title">Python basics</h1>
+						<p class="section-course__subtitle">Основы кодинга на Python</p>
+						<h2 class="section-course__price">20 000 ₸/мес</h2>
+						<ul class="section-course__info">
+							<li class="section-course__info_elem duration">
+								<i class="icon icon-courses icon-courses__duration"></i>
+								Длительность:&nbsp;<span class="bold">4 недели</span>
+							</li>
+							<li class="section-course__info_elem">
+								<i class="icon icon-courses icon-courses__level"></i>
+								Уровень:&nbsp;<span class="bold">начальный</span>
+							</li>
+							<li class="section-course__info_elem">
+								<i class="icon icon-courses icon-courses__start"></i>
+								Старт:&nbsp;<span class="bold">19 октября</span>
+							</li>
+							<li class="section-course__info_elem">
+								<i class="icon icon-courses icon-courses__time"></i>
+								<span class="bold">Пн-Чт 19:00-20:30</span>
+							</li>
+							<li class="section-course__info_elem">
+								<i class="icon icon-courses icon-courses__places"></i>
+								Количество сутдентов:&nbsp;<span class="bold">5-6</span>
+							</li>
+						</ul>
+						<p class="section-course__program" hidden data-course="4">
+							С++ - это отличный язык для изучения алгоритмизации.
+
+							Вы изучите следующие темы: условные операторы, циклы for/while/do-while, массивы,
+							многомерные массивы, функции, рекурсия и написание собственных алгоритмов.
+
+
+							Все темы будут закрепляться мощной практикой, которую мы подготовили специально для вас!
+							Разберем популярные задачи и методы применения алгоритмов для их решения!
+
+						</p>
+						<button class="btn btn__rounded md" data-toggle="modal" data-modal="course-details">
+							Подробнее
+						</button>
+					</div>
+
+					<div class="section__courses_elem section-course">
+						<div class="section-course__icon">
+							<img src="img/courses/web-intensive.png" alt="Web Intensive Icon">
+						</div>
+						<h1 class="section-course__title">Java Basics</h1>
+						<p class="section-course__subtitle">Основы кодинга на Java</p>
+						<h2 class="section-course__price">20 000 ₸/мес</h2>
+						<ul class="section-course__info">
+							<li class="section-course__info_elem">
+								<i class="icon icon-courses icon-courses__duration"></i>
+								Длительность:&nbsp;<span class="bold">4 недели</span>
+							</li>
+							<li class="section-course__info_elem">
+								<i class="icon icon-courses icon-courses__level"></i>
+								Уровень:&nbsp;<span class="bold">начальный</span>
+							</li>
+							<li class="section-course__info_elem">
+								<i class="icon icon-courses icon-courses__start"></i>
+								Старт:&nbsp;<span class="bold">28 октября</span>
+							</li>
+							<li class="section-course__info_elem">
+								<i class="icon icon-courses icon-courses__time"></i>
+								<span class="bold">Пн-Ср-Пт 19:00-20:30</span>
+							</li>
+							<li class="section-course__info_elem">
+								<i class="icon icon-courses icon-courses__places"></i>
+								Количество сутдентов:&nbsp;<span class="bold">5-6</span>
+							</li>
+						</ul>
+						<p class="section-course__program" hidden data-course="2">
+							Java - это один из самых востребованных языков в мире. Многие рекомендуют начать именно с
+							него или же с С++.
+
+							Вы изучите следующие темы: условные операторы, циклы for/while/do-while, массивы,
+							многомерные массивы, функции, рекурсия и написание собственных алгоритмов.
+
+
+							Все темы будут закрепляться мощной практикой, которую мы подготовили специально для вас!
+							Разберем популярные задачи и методы применения алгоритмов для их решения!
+
+						</p>
+						<button class="btn btn__rounded md" data-toggle="modal" data-modal="course-details">
+							Подробнее
+						</button>
 					</div>
 				</div>
-			</section>
 
-		</main>
-		<footer class="footer">
-	<div class="footer__content container">
-		<div class="footer__content_logo"><img src="img/logo-dark.svg" alt="Logo"></div>
-		<ul class="footer__content_list">
-			<li class="footer__content_elem">&copy; 2020</li>
-			<li class="footer__content_elem">
-				<a href="#">Связаться с нами</a>
-			</li>
-			<li class="footer__content_elem">
-				<a href="#">Публичный договор-оферта</a>
-			</li>
-		</ul>
-		<ul class="footer__content_social">
-			<li class="footer__content_sn">
-				<a href="#"><i class="icon-social icon-social__instagram"></i></a>
-			</li>
-			<li class="footer__content_sn">
-				<a href="#"><i class="icon-social icon-social__facebook"></i></a>
-			</li>
-			<li class="footer__content_sn">
-				<a href="#"><i class="icon-social icon-social__twitter"></i></a>
-			</li>
-			<li class="footer__content_sn">
-				<a href="#"><i class="icon-social icon-social__telegram"></i></a>
-			</li>
-		</ul>
-	</div>
-</footer>
-	</div>
-	<script src="js/jquery-3.5.1.min.js"></script>
+				<div id="course-details" class="modal section-course-modal">
+					<button class="modal__btn close-btn">
+						<i class="icon-ui icon-ui__cross"></i>
+					</button>
+					<div class="modal-content section-course-modal__content">
+						<h1 class="section-course-modal__content_title">Программа курса</h1>
+						<p class="section-course-modal__content_description"></p>
+						<form class="section-course-modal__content_form">
+							<h2 class="section-course-modal__content_subtitle">Оставьте заявку и мы проведем более
+								подробную консультацию для вас</h2>
+							<p class="dn error-text"></p>
+							<input name="name" type="text" placeholder="Ваше имя..." class="light">
+							<input name="phone" type="tel" placeholder="+7" class="light">
+							<input name="course" type="hidden" value="Not Selected">
+							<p class="record-modal__content_caution">
+								*Оставляя заявку, Вы даете согласие на обработку персональных данных
+							</p>
+							<button type="button" onclick="toSendRequest()" name="send" class="btn btn__rounded md">
+								Отправить
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section_light">
+			<div class="section-discount container">
+				<h1 class="section__title text-center title-md">
+					Позови друга и получи до
+					<span class="section__title_light">20% скидки</span>
+					от суммы покупи
+				</h1>
+			</div>
+		</section>
+
+		<section class="section p-lg">
+			<div class="section-certificates section__flex_center container">
+				<h1 class="section__title text-center">Сертификаты об окончании</h1>
+				<div class="section-certificates__list">
+					<div class="section-certificates__elem">
+						<img src="img/certificates/certificate-1.png" alt="Certificate 1">
+					</div>
+					<div class="section-certificates__elem">
+						<img src="img/certificates/certificate-2.png" alt="Certificate 2">
+					</div>
+					<div class="section-certificates__elem">
+						<img src="img/certificates/certificate-3.png" alt="Certificate 3">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section p-lg">
+			<div class="section-company container">
+				<h1 class="section__title text-center">Где работают наши выпускники</h1>
+				<div class="section-company__list">
+					<div class="section-company__elem"><img src="img/companies/tele2.png" alt="Tele 2"></div>
+					<div class="section-company__elem"><img src="img/companies/kase.png" alt="KASE"></div>
+					<div class="section-company__elem"><img src="img/companies/mersys.png" alt="MERSYS"></div>
+					<div class="section-company__elem"><img src="img/companies/dar.png" alt="DAR"></div>
+					<div class="section-company__elem"><img src="img/companies/kolesa.png" alt="КОЛЕСА КРЫША МАРКЕТ">
+					</div>
+					<div class="section-company__elem"><img src="img/companies/prime-source.png" alt="Prime Source">
+					</div>
+					<div class="section-company__elem"><img src="img/companies/choco-family.png" alt="Choco Family">
+					</div>
+					<div class="section-company__elem"><img src="img/companies/altyn.png" alt="Altyn I"></div>
+					<div class="section-company__elem"><img src="img/companies/aviata.png" alt="Aviata.kz"></div>
+					<div class="section-company__elem"><img src="img/companies/rg-brands.png" alt="RG Brands"></div>
+					<div class="section-company__elem"><img src="img/companies/alsi.png" alt="ALSI"></div>
+					<div class="section-company__elem"><img src="img/companies/kaspi.svg" alt="Kaspi"></div>
+					<div class="section-company__elem"><img src="img/companies/eurasian-bank.png" alt="Eurasian Bank">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section p-md">
+			<div class="section-reviews container ph-lg">
+				<h1 class="section__title text-center">Отзывы студентов</h1>
+				<div class="section-reviews__slider">
+
+					<div class="section-reviews__column">
+						<div class="section-reviews__elem">
+							<p class="section-reviews__elem_text">
+								Ранее я работал UX/UI дизайнером, и с самого 9 класса хотел уметь
+								программировать, и работать над крутыми проектами, и
+								BITLAB мне с этим помогли. После окончания учебы, я получил множество
+								предложении по работе. И на данный момент работаю
+								в айти компании Pillowz.kz, моя должность backend Python developer.
+							</p>
+							<div class="section-reviews__elem_person">
+								<div class="section-reviews__elem_info">
+									<h1 class="section-reviews__elem_name">Темирлан Зарлыков</h1>
+									<p class="section-reviews__elem_job">Разработчик Pillowz.kz</p>
+								</div>
+								<div class="section-reviews__elem_avatar">
+									<img src="img/avatars/temirlan-zarlykov.png" alt="Темирлан Зарлыков">
+								</div>
+							</div>
+						</div>
+
+						<div class="section-reviews__elem">
+							<p class="section-reviews__elem_text">
+								Очень благодарен тренерам BITLAB, ведь именно в этой команде очень интенсивно и
+								разносторонне
+								обучали основным аспектам
+								программирования; создали фундамент, опираясь на который я с каждым днем уверенно
+								продолжаю
+								развиваться; мне помогли
+								научиться мыслить как настоящий разработчик.
+							</p>
+							<div class="section-reviews__elem_person">
+								<div class="section-reviews__elem_info">
+									<h1 class="section-reviews__elem_name">Асылхан Райсханов</h1>
+									<p class="section-reviews__elem_job">iOS-разработчик «Колеса Крыша Маркет»</p>
+								</div>
+								<div class="section-reviews__elem_avatar">
+									<img src="img/avatars/asylkhan-raiskhanov.png" alt="Асылхан Райсханов">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-reviews__column">
+						<div class="section-reviews__elem">
+							<p class="section-reviews__elem_text">
+								По окончанию курсов я получил несколько предложений о работе, и в данный момент я
+								работаю
+								разработчиком ПО в Prime
+								Source. Я очень рад, что выбрал именно школу BITLAB, все что вам нужно, это жгучее
+								желание,
+								во всем остальном
+								профессиональные преподаватели школы вам помогут!
+							</p>
+							<div class="section-reviews__elem_person">
+								<div class="section-reviews__elem_info">
+									<h1 class="section-reviews__elem_name">Искандер Сапиев</h1>
+									<p class="section-reviews__elem_job">Java разработчик Prime Source</p>
+								</div>
+								<div class="section-reviews__elem_avatar">
+									<img src="img/avatars/iskander-sapiev.png" alt="Искандер Сапиев">
+								</div>
+							</div>
+						</div>
+
+						<div class="section-reviews__elem">
+							<p class="section-reviews__elem_text">
+								Став частью команды BITLAB,
+								я получил не только очень крепкий фундамент и отличные знания, но и желание и мотивацию
+								развиваться и стать лучше,
+								которое не угасает по сей день. Я премного благодарен тренерам за знания, опыт и за ту
+								самую
+								атмосферу, которая помогла
+								мне стать профессионалом в своей сфере.
+							</p>
+							<div class="section-reviews__elem_person">
+								<div class="section-reviews__elem_info">
+									<h1 class="section-reviews__elem_name">Мухаммед Иса</h1>
+									<p class="section-reviews__elem_job">
+										Android разработчик Chocotravel холдинга ChocoFamily.
+									</p>
+								</div>
+								<div class="section-reviews__elem_avatar">
+									<img src="img/avatars/muhammed-isa.png" alt="Мухаммед Иса">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-reviews__column">
+						<div class="section-reviews__elem">
+							<p class="section-reviews__elem_text">
+								Благодаря BITLAB я научился поднимать проекты, строить архитектуры, и просто писать код.
+								Самый главный навык который я
+								получил это мышление программиста. Это и поспособствовало тому, что уже через 2 месяца
+								меня
+								взяли на работу.
+							</p>
+							<div class="section-reviews__elem_person">
+								<div class="section-reviews__elem_info">
+									<h1 class="section-reviews__elem_name">Айдын Мамырбаев</h1>
+									<p class="section-reviews__elem_job">Java разработчик АО "Сбербанк"</p>
+								</div>
+								<div class="section-reviews__elem_avatar">
+									<img src="img/avatars/aidyn-mamyrbaev.png" alt="Айдын Мамырбаев">
+								</div>
+							</div>
+						</div>
+
+						<div class="section-reviews__elem">
+							<p class="section-reviews__elem_text">
+								Я мечтал стать программистом, но не думал что поначалу будет так трудно. Во всем этом
+								разобраться мне помогли тренера
+								BITLAB. Интересные уроки, много хороших заданий и разного рода мотивация дали мне
+								возможность
+								расширить свой багаж
+								знаний и понять, что программирование - это действительно моё.
+							</p>
+							<div class="section-reviews__elem_person">
+								<div class="section-reviews__elem_info">
+									<h1 class="section-reviews__elem_name">Рауан Султанбай</h1>
+									<p class="section-reviews__elem_job">Веб-разработчик TOO "Bilim Media Group".</p>
+								</div>
+								<div class="section-reviews__elem_avatar">
+									<img src="img/avatars/rauan-sultanbai.png" alt="Рауан Султанбай">
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="section p-sm">
+			<div class="section-form container container__sm">
+				<h1 class="section__title text-center">Получи 2 видеоурока из курса бесплатно</h1>
+				<form action="#" class="section-form__form">
+					<p class="dn error-text"></p>
+					<input name="name" type="text" placeholder="Ваше имя...">
+					<select name="course">
+						<option disabled selected>Выберите курс</option>
+						<option value="4">C++ basics</option>
+						<option value="2">Java basics</option>
+						<option value="3">Python basics</option>
+					</select>
+					<input name="phone" type="tel" placeholder="+7">
+					<p class="section-form__caution">
+						*Оставляя заявку, Вы даете согласие на обработку персональных данных
+					</p>
+					<button type="button" class="btn btn__rounded md" onclick="toSendRequest()" name="send">
+						Отправить
+					</button>
+				</form>
+			</div>
+		</section>
+
+		<section class="section p-lg">
+			<div class="section-trainers container">
+				<h1 class="section__title text-center title-md">
+					Мы не просто школа программирования, мы академия с глобальной целью
+					<span class="section__title_mark">
+                     стать фабрикой крутых программистов!
+                  </span>
+				</h1>
+				<div class="section-trainers__list">
+					<div class="section-trainers__elem">
+						<div class="section-trainers__elem_avatar">
+							<img src="img/avatars/Ilyas.png" alt="Ильяс Жуанышев">
+						</div>
+						<h1 class="section-trainers__elem_name">Ильяс Жуанышев</h1>
+						<p class="section-trainers__elem_subjects">Java SE, Java EE, PHP</p>
+					</div>
+					<div class="section-trainers__elem">
+						<div class="section-trainers__elem_avatar">
+							<img src="img/avatars/Eldar.png" alt="Елдар Хасен">
+						</div>
+						<h1 class="section-trainers__elem_name">Елдар Хасен</h1>
+						<p class="section-trainers__elem_subjects">Java SE, Java EE, PHP, Laravel Framework</p>
+					</div>
+					<div class="section-trainers__elem">
+						<div class="section-trainers__elem_avatar">
+							<img src="img/avatars/asylkhan-aldanazar.png" alt="Асылхан Алданазар">
+						</div>
+						<h1 class="section-trainers__elem_name">Асылхан Алданазар</h1>
+						<p class="section-trainers__elem_subjects">Python, Django, Javascript, Java, C++</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section p-md section-knowledge">
+			<div class="section__flex_center container">
+				<h1 class="section__title text-center title-md">Знания - это актив, который невозможно потерять.</h1>
+				<button class="btn btn__rounded lg mt-md" data-toggle="modal" data-modal="record">
+					Оставить заявку
+				</button>
+			</div>
+		</section>
+
+		<section class="section p-lg">
+			<div class="section-contacts container">
+				<div class="section-contacts__info">
+					<h1 class="section__title">Наши контакты</h1>
+					<ul class="section-contacts__list">
+						<li class="section-contacts__elem">
+							<i class="icon icon-contacts icon-contacts__mail"></i>
+							<a href="mailto:bitlabacademy@gmail.com">bitlabacademy@gmail.com</a>
+						</li>
+						<li class="section-contacts__elem">
+							<i class="icon icon-contacts icon-contacts__phone"></i>
+							<a href="tel:77479822311">+7 (747) 982 23 11</a>
+						</li>
+						<li class="section-contacts__elem">
+							<i class="icon icon-contacts icon-contacts__phone"></i>
+							<a href="tel:77000700101">+7 (700) 070 01 01</a>
+						</li>
+						<li class="section-contacts__elem">
+							<i class="icon icon-contacts icon-contacts__location"></i>
+							г. Алматы, ул.Айманова 126, 6-ой этаж
+						</li>
+					</ul>
+				</div>
+				<div class="section-contacts__map">
+					<img src="img/map.png" alt="Map">
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<footer class="footer">
+		<div class="footer__content container">
+			<div class="footer__content_logo"><img src="img/logo-dark.svg" alt="Logo"></div>
+			<ul class="footer__content_list">
+				<li class="footer__content_elem">&copy; 2020</li>
+				<li class="footer__content_elem">
+					<a href="#">Связаться с нами</a>
+				</li>
+				<li class="footer__content_elem">
+					<a href="#">Публичный договор-оферта</a>
+				</li>
+			</ul>
+			<ul class="footer__content_social">
+				<li class="footer__content_sn">
+					<a href="#"><i class="icon-social icon-social__instagram"></i></a>
+				</li>
+				<li class="footer__content_sn">
+					<a href="#"><i class="icon-social icon-social__facebook"></i></a>
+				</li>
+				<li class="footer__content_sn">
+					<a href="#"><i class="icon-social icon-social__twitter"></i></a>
+				</li>
+				<li class="footer__content_sn">
+					<a href="#"><i class="icon-social icon-social__telegram"></i></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</div>
+<script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/app.min.js"></script>
