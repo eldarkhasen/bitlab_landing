@@ -7,6 +7,8 @@
    <meta name="format-detection" content="telephone=no">
    <link rel="stylesheet" href="css/style.min.css">
    <link rel="shortcut icon" href="favicon.ico">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="msapplication-navbutton-color" content="#0accda">
    <meta name="apple-mobile-web-app-status-bar-style" content="#0accda">
@@ -59,13 +61,12 @@
 
          <header class="header details-bg">
             <div class="header__content container ph-lg">
+               <p class="header__uptitle">курсы для студентов</p>
                <h1 class="header__title">
-                  Курсы программирования для студентов, с гарантией возврата средств
+                  Интенсивные курсы программирования, которые помогут вам сдать экзамены
+                  <span class="red">или мы вернем вам деньги</span>
                </h1>
-               <p class="header__subtitle">Поможем подготовиться к экзаменам или вернем вам деньги
-               </p>
-               <p class="header__description">*Возврат осуществляется только в случае полного прохождения курса и
-                  провала на сессии
+               <p class="header__description">Возврат осуществляется после полного прохождения курса
                </p>
                <button class="btn btn__rounded lg mt-md" data-toggle="modal" data-modal="record">
                   Бесплатная консультация
@@ -73,62 +74,34 @@
             </div>
          </header>
 
+         <!-- THINK -->
          <section class="section p-md">
-            <div class="section container">
-               <h1 class="section__title text-center">Как проходит обучение</h1>
-               <p class="section__subtitle text-center" id="section-howto__subtitle"></p>
-               <div class="section-howto__subtitles">
-                  <p data-screen="lecture">
-                     Живые лекции с лектором в онлайне
+            <div class="container section-think">
+               <div class="section-think__text">
+                  <p class="section-think__text_p">
+                     Мы с пониманием относимся к тому что из за
+                     <span class="red">пандемии</span>
+                     многим сложно привыкать к новому виду обучения.
                   </p>
-                  <p data-screen="practice">
-                     Отдельный блок для практики, чтобы закрепить полученную информацию
+                  <p class="section-think__text_p">
+                     Поэтому мы предлагаем ускоренные курсы программирования, пройдя который, вы сможете получить
+                     необходимые знания для
+                     успешной сдачи экзаменов!
                   </p>
-                  <p data-screen="support">
-                     Ментор проконсультирует вас и даст совет, как изменить что-то, исходя из вашей ситуации
+                  <p class="section-think__text_p red">
+                     Мы вернем вам деньги если вы не сможете сдать сессию!
                   </p>
                </div>
-               <div class="section-howto">
-                  <div class="section-howto__btns">
-                     <button class="section-howto__btn active" data-screen="lecture">Лекции</button>
-                     <button class="section-howto__btn" data-screen="practice">Практика</button>
-                     <button class="section-howto__btn" data-screen="support">Поддержка</button>
-                     <div class="section-howto__underline" id="section-howto-underline"></div>
-                  </div>
-                  <div class="section-howto__screens">
-                     <div class="section-howto__slider" id="section-howto-slider">
-                        <div class="section-howto__screen active" data-screen="lecture">
-                           <img src="img/howto/lecture.png" alt="Лекции">
-                        </div>
-                        <div class="section-howto__screen" data-screen="practice">
-                           <img src="img/howto/practice.png" alt="Практика">
-                        </div>
-                        <div class="section-howto__screen" data-screen="support">
-                           <img src="img/howto/player.png" alt="Поддержка">
-                        </div>
-                     </div>
-                     <button class="section-howto__btn-expand" data-toggle="modal" data-modal="section-howto-fullscreen"
-                        data-modal-type="fullscreen-img">
-                        <i class="icon-ui icon-ui__expand"></i>
-                        <span class="section-howto__btn-expand_text">На весь экран</span>
-                     </button>
-                  </div>
-
-                  <div id="section-howto-fullscreen" class="modal">
-                     <button class="modal__btn close-btn">
-                        <i class="icon-ui icon-ui__cross"></i>
-                     </button>
-                     <img class="section-howto-fullscreen__img modal-content" src="img/howto/lecture.png"
-                        alt="Fullscreen Img">
-                  </div>
-
+               <div class="section-think__img">
+                  <img src="img/bg-images/emoji-think.png" alt="Emoji">
                </div>
             </div>
          </section>
 
+         <!-- COURSES -->
          <section class="section p-lg">
             <div class="section__flex_center container">
-               <h1 class="section__title text-center">Ближайшие курсы</h1>
+               <h1 class="section__title text-center">Наши направления</h1>
                <p class="section__subtitle text-center">Выбери себе подходящий курс</p>
                <div class="section__courses">
 
@@ -203,7 +176,13 @@
                         </li>
                      </ul>
                      <p class="section-course__program" hidden data-course="3">
-                        Надо написать
+                        Python - это отличный язык для изучения алгоритмизации.
+                        <br>
+                        Вы изучите следующие темы: условные операторы, циклы for/while/do-while, массивы,
+                        многомерные массивы, функции, рекурсия и написание собственных алгоритмов.
+                        <br>
+                        Все темы будут закрепляться мощной практикой, которую мы подготовили специально для вас!
+                        Разберем популярные задачи и методы применения алгоритмов для их решения!
                      </p>
                      <button class="btn btn__rounded md" data-toggle="modal" data-modal="course-details">
                         Подробнее
@@ -279,6 +258,7 @@
             </div>
          </section>
 
+         <!-- REF -->
          <section class="section section_light">
             <div class="section-discount container">
                <h1 class="section__title text-center title-md">
@@ -289,46 +269,204 @@
             </div>
          </section>
 
-         <section class="section p-lg">
-            <div class="section-certificates section__flex_center container">
-               <h1 class="section__title text-center">Сертификаты об окончании</h1>
-               <div class="section-certificates__list">
-                  <div class="section-certificates__elem">
-                     <img src="img/certificates/certificate-1.png" alt="Certificate 1">
+         <!-- HOWTO -->
+         <section class="section p-md">
+            <div class="section container">
+               <h1 class="section__title text-center">Как проходит обучение</h1>
+               <p class="section__subtitle text-center" id="section-howto__subtitle"></p>
+               <div class="section-howto__subtitles">
+                  <p data-screen="lecture">
+                     Живые лекции с лектором в онлайне
+                  </p>
+                  <p data-screen="practice">
+                     Отдельный блок для практики, чтобы закрепить полученную информацию
+                  </p>
+                  <p data-screen="support">
+                     Ментор проконсультирует вас и даст совет, как изменить что-то, исходя из вашей ситуации
+                  </p>
+               </div>
+               <div class="section-howto">
+                  <div class="section-howto__btns">
+                     <button class="section-howto__btn active" data-screen="lecture">Лекции</button>
+                     <button class="section-howto__btn" data-screen="practice">Практика</button>
+                     <button class="section-howto__btn" data-screen="support">Разбор задач</button>
+                     <div class="section-howto__underline" id="section-howto-underline"></div>
                   </div>
-                  <div class="section-certificates__elem">
-                     <img src="img/certificates/certificate-2.png" alt="Certificate 2">
+                  <div class="section-howto__screens">
+                     <div class="section-howto__slider" id="section-howto-slider">
+                        <div class="section-howto__screen active" data-screen="lecture">
+                           <img src="img/howto/lecture.png" alt="Лекции">
+                        </div>
+                        <div class="section-howto__screen" data-screen="practice">
+                           <img src="img/howto/practice.png" alt="Практика">
+                        </div>
+                        <div class="section-howto__screen" data-screen="support">
+                           <img src="img/howto/player.png" alt="Поддержка">
+                        </div>
+                     </div>
+                     <button class="section-howto__btn-expand" data-toggle="modal" data-modal="section-howto-fullscreen"
+                        data-modal-type="fullscreen-img">
+                        <i class="icon-ui icon-ui__expand"></i>
+                        <span class="section-howto__btn-expand_text">На весь экран</span>
+                     </button>
                   </div>
-                  <div class="section-certificates__elem">
-                     <img src="img/certificates/certificate-3.png" alt="Certificate 3">
+
+                  <div id="section-howto-fullscreen" class="modal">
+                     <button class="modal__btn close-btn">
+                        <i class="icon-ui icon-ui__cross"></i>
+                     </button>
+                     <img class="section-howto-fullscreen__img modal-content" src="img/howto/lecture.png"
+                        alt="Fullscreen Img">
                   </div>
+
                </div>
             </div>
          </section>
 
-         <section class="section p-lg">
-            <div class="section-company container">
-               <h1 class="section__title text-center">Где работают наши выпускники</h1>
-               <div class="section-company__list">
-                  <div class="section-company__elem"><img src="img/companies/tele2.png" alt="Tele 2"></div>
-                  <div class="section-company__elem"><img src="img/companies/kase.png" alt="KASE"></div>
-                  <div class="section-company__elem"><img src="img/companies/mersys.png" alt="MERSYS"></div>
-                  <div class="section-company__elem"><img src="img/companies/dar.png" alt="DAR"></div>
-                  <div class="section-company__elem"><img src="img/companies/kolesa.png" alt="КОЛЕСА КРЫША МАРКЕТ">
+         <!-- UNIVERSITY -->
+         <section class="section p-md">
+            <div class="container section-uni">
+               <div class="section-uni__content">
+                  <h1 class="section-uni__title">
+                     Для кого этот курс?
+                  </h1>
+                  <p class="section-uni__subtitle">
+                     Мы подготовили программу курса схожую с академическим силлабусом университетов в Казахстане. Пройдя
+                     курс вы можете быть
+                     уверены в успешной сдаче экзаменов. В группы отбираются только студенты!
+                  </p>
+                  <div class="section-uni__img md">
+                     <img src="img/bg-images/uni.png" alt="Touching Person">
                   </div>
-                  <div class="section-company__elem"><img src="img/companies/prime-source.png" alt="Prime Source"></div>
-                  <div class="section-company__elem"><img src="img/companies/choco-family.png" alt="Choco Family"></div>
-                  <div class="section-company__elem"><img src="img/companies/altyn.png" alt="Altyn I"></div>
-                  <div class="section-company__elem"><img src="img/companies/aviata.png" alt="Aviata.kz"></div>
-                  <div class="section-company__elem"><img src="img/companies/rg-brands.png" alt="RG Brands"></div>
-                  <div class="section-company__elem"><img src="img/companies/alsi.png" alt="ALSI"></div>
-                  <div class="section-company__elem"><img src="img/companies/kaspi.svg" alt="Kaspi"></div>
-                  <div class="section-company__elem"><img src="img/companies/eurasian-bank.png" alt="Eurasian Bank">
+                  <div class="section-uni__unis">
+                     <h2 class="section-uni__unis_title">
+                        Курс идеально подойдет для студентов
+                     </h2>
+                     <div class="section-uni__list">
+                        <div class="section-uni__elem"><img src="img/uni/kbtu.png" alt="KBTU"></div>
+                        <div class="section-uni__elem"><img src="img/uni/aitu.png" alt="AITU"></div>
+                        <div class="section-uni__elem"><img src="img/uni/iitu.png" alt="IITU"></div>
+                        <div class="section-uni__elem"><img src="img/uni/sdu.png" alt="SDU"></div>
+                     </div>
+                     <button class="btn btn__rounded lg mt-md" data-toggle="modal" data-modal="record">
+                        Оставить заявку
+                     </button>
                   </div>
+               </div>
+               <div class="section-uni__img">
+                  <img src="img/bg-images/uni.png" alt="Touching Person">
+               </div>
+         </section>
+
+         <section class="section p-md">
+            <div class="container section-spoiler section__flex_center">
+               <h1 class="section__title text-center">
+                  Чему вы научитесь на курсе?
+               </h1>
+               <p class="section__subtitle text-center">
+                  Выбрав любое из трех направлений, вы будете проходить следующие темы:
+               </p>
+               <div class="section-spoiler__list">
+
+                  <div class="section-spoiler__elem">
+                     <button class="section-spoiler__elem_title">
+                        1. Основы программирования и базовый синтаксис
+                     </button>
+                     <p class="section-spoiler__elem_subtitle">
+                        Начнем с полного нуля, разберем как пишутся алгоритмы, что происходит под капотом, как создаются
+                        переменные и как вообще
+                        изучить синтаксис языка
+                     </p>
+                  </div>
+
+                  <div class="section-spoiler__elem ">
+                     <button class="section-spoiler__elem_title">
+                        2. Работа с условными операторами If-else
+                     </button>
+                     <p class="section-spoiler__elem_subtitle">
+                        Улучшаем наш алгоритм. Добавим больше логики с помощью условных операторов. Расскажем как решать
+                        сложные задачи и
+                        сделаем мини-приложения с if-else
+                     </p>
+                  </div>
+
+                  <div class="section-spoiler__elem ">
+                     <button class="section-spoiler__elem_title">
+                        3. Циклы, циклы, циклы
+                     </button>
+                     <p class="section-spoiler__elem_subtitle">
+                        Самая “проблемная” тема многих новичков. Разберем циклы for,while do-while, чтобы вы полностью
+                        поняли как они работают и
+                        могли решать с помощью них любые задачи
+                     </p>
+                  </div>
+
+                  <div class="section-spoiler__elem ">
+                     <button class="section-spoiler__elem_title">
+                        4. Строки, массивы и двумерные массивы
+                     </button>
+                     <p class="section-spoiler__elem_subtitle">
+                        Как только вы поймете как работать с циклами можно переходить к строкам и массивам. Разберем как
+                        устроены массивы,
+                        узнаем как использовать массивы в проектах и в задачах
+                     </p>
+                  </div>
+
+                  <div class="section-spoiler__elem ">
+                     <button class="section-spoiler__elem_title">
+                        5. Функции(методы)
+                     </button>
+                     <p class="section-spoiler__elem_subtitle">
+                        Научитесь писать собственные функции(методы) и использовать их на практике.
+                     </p>
+                  </div>
+
+                  <div class="section-spoiler__elem ">
+                     <button class="section-spoiler__elem_title">
+                        6. Рекурсия, указатели и ссылки
+                     </button>
+                     <p class="section-spoiler__elem_subtitle">
+                        Расставим все по полочкам в теме рекурсий и пойнтеров, в одних из сложных и проблемных темах для
+                        новичков
+                     </p>
+                  </div>
+
+                  <div class="section-spoiler__elem ">
+                     <button class="section-spoiler__elem_title">
+                        7. Алгоритмы и структуры данных
+                     </button>
+                     <p class="section-spoiler__elem_subtitle">
+                        Расскажем о техниках решения задач, какие алгоритмы можно применять, и рассмотрим структуры
+                        данных
+                     </p>
+                  </div>
+
                </div>
             </div>
          </section>
 
+         <!-- DESC -->
+         <section class="section section_light section-discount">
+            <div class="container abs section__flex_center">
+               <h1 class="section__title text-center title-md">
+                  Кто вас будет обучать?
+               </h1>
+               <p class="section__descr text-center">
+                  Наши тренера - это <span class="red">действующие программисты</span>, которые работают над реальными
+                  проектами. Помимо уроков
+                  вы можете получить
+                  много инсайтов о мире IT и не только
+               </p>
+               <button class="btn btn__rounded lg mt-md" data-toggle="modal" data-modal="record">
+                  Хочу записаться
+               </button>
+               <div class="section-discount__img">
+                  <img src="img/bg-images/emoji-eye.png" alt="Emoji One Eye Closed">
+               </div>
+            </div>
+         </section>
+
+         <!-- REVIEWS -->
          <section class="section p-md">
             <div class="section-reviews container ph-lg">
                <h1 class="section__title text-center">Отзывы студентов</h1>
@@ -460,9 +598,34 @@
             </div>
          </section>
 
+         <!-- COMPANIES -->
+         <section class="section p-lg">
+            <div class="section-company container">
+               <h1 class="section__title text-center">Где работают наши выпускники</h1>
+               <div class="section-company__list">
+                  <div class="section-company__elem"><img src="img/companies/tele2.png" alt="Tele 2"></div>
+                  <div class="section-company__elem"><img src="img/companies/kase.png" alt="KASE"></div>
+                  <div class="section-company__elem"><img src="img/companies/mersys.png" alt="MERSYS"></div>
+                  <div class="section-company__elem"><img src="img/companies/dar.png" alt="DAR"></div>
+                  <div class="section-company__elem"><img src="img/companies/kolesa.png" alt="КОЛЕСА КРЫША МАРКЕТ">
+                  </div>
+                  <div class="section-company__elem"><img src="img/companies/prime-source.png" alt="Prime Source"></div>
+                  <div class="section-company__elem"><img src="img/companies/choco-family.png" alt="Choco Family"></div>
+                  <div class="section-company__elem"><img src="img/companies/altyn.png" alt="Altyn I"></div>
+                  <div class="section-company__elem"><img src="img/companies/aviata.png" alt="Aviata.kz"></div>
+                  <div class="section-company__elem"><img src="img/companies/rg-brands.png" alt="RG Brands"></div>
+                  <div class="section-company__elem"><img src="img/companies/alsi.png" alt="ALSI"></div>
+                  <div class="section-company__elem"><img src="img/companies/kaspi.svg" alt="Kaspi"></div>
+                  <div class="section-company__elem"><img src="img/companies/eurasian-bank.png" alt="Eurasian Bank">
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- FORM -->
          <section class="section p-sm">
             <div class="section-form container container__sm">
-               <h1 class="section__title text-center">Получи 2 видеоурока из курса бесплатно</h1>
+               <h1 class="section__title text-center">Оставь свои контакты и стань частью нашей семьи</h1>
                <form action="#" class="section-form__form">
                   <p class="dn error-text"></p>
                   <input name="name" type="text" placeholder="Ваше имя...">
@@ -483,6 +646,7 @@
             </div>
          </section>
 
+         <!-- TRANERS -->
          <section class="section p-lg">
             <div class="section-trainers container">
                <h1 class="section__title text-center title-md">
@@ -517,6 +681,7 @@
             </div>
          </section>
 
+         <!-- PHRASE -->
          <section class="section p-md section-knowledge">
             <div class="section__flex_center container">
                <h1 class="section__title text-center title-md">Знания - это актив, который невозможно потерять.</h1>
@@ -526,6 +691,7 @@
             </div>
          </section>
 
+         <!-- CONTACTS -->
          <section class="section p-lg">
             <div class="section-contacts container">
                <div class="section-contacts__info">
