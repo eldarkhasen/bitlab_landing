@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>BITLAB Academy | Курсы программирования для студентов</title>
+   <meta charset="UTF-8">
+   <meta name="format-detection" content="telephone=no">
+   <link rel="stylesheet" href="css/style.min.css">
+   <link rel="shortcut icon" href="favicon.ico">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="msapplication-navbutton-color" content="#0accda">
+   <meta name="apple-mobile-web-app-status-bar-style" content="#0accda">
+   <meta name="theme-color" content="#0accda">
+</head>
+
+<body>
+   <div class="wrapper">
+      <nav class="nav">
+         <div class="nav__content">
+            <a href="/" class="nav__logo">
+               <img src="img/logo.svg" alt="Logo">
+            </a>
+            <a href="#" class="btn">Войти</a>
+         </div>
+      </nav>
+      <main class="page">
+
+         <div id="record" class="modal record-modal">
+            <button class="modal__btn close-btn">
+               <i class="icon-ui icon-ui__cross"></i>
+            </button>
+            <div class="modal-content record-modal__content">
+               <h1 class="record-modal__content_title">
+                  Оставьте заявку и мы проконсультируем вас
+               </h1>
+               <form class="record-modal__content_form">
+                  <p class="dn error-text"></p>
+                  <input name="name" type="text" placeholder="Ваше имя..." class="light">
+                  <select name="course" class="light">
+                     <option value="Not selected" disabled selected>Выберите курс</option>
+                     <option value="4">C++ basics</option>
+                     <option value="3">Java basics</option>
+                     <option value="2">Python basics</option>
+                  </select>
+                  <input name="phone" type="tel" placeholder="+7" class="light" autocomplete="off">
+                  <p class="record-modal__content_caution">
+                     *Оставляя заявку, Вы даете согласие на обработку персональных данных
+                  </p>
+                  <button type="button" onclick="toSendRequest()" name="send" class="btn btn__rounded md">
+                     Отправить
+                  </button>
+               </form>
+            </div>
+         </div>
+         <div id="contact-result"></div>
+         <div id="loader" title="2">
+            <div class="circle"></div>
+         </div>
+
+         <header class="header python-bg">
+            <div class="header__content container ph-lg">
+               <p class="header__uptitle">ОСНОВЫ PYTHON</p>
+               <h1 class="header__title">Курс по Python для начинающих!</h1>
+               <p class="header__description">Оставь заявку и получи пробные видеоуроки!</p>
+               <a href="" class="btn btn__rounded lg">Получить консультацию</a>
+            </div>
+         </header>
+
+         <section class="section p-md">
+            <div class="section-wave section__flex_center container">
+               <div class="section-wave__list">
+
+                  <div class="section-wave__elem">
+                     <div class="section-wave__elem_icon">
+                        <i class="icon-wave icon-wave__info"></i>
+                     </div>
+                     <h1 class="section-wave__elem_title">Ближайшие потоки</h1>
+                     <p class="section-wave__elem_subtitle">14 ноября</p>
+                     <p class="section-wave__elem_lowertitle">Ср-Сб 19:00-21:00</p>
+                  </div>
+
+                  <div class="section-wave__elem">
+                     <div class="section-wave__elem_icon">
+                        <i class="icon-wave icon-wave__clock"></i>
+                     </div>
+                     <h1 class="section-wave__elem_title">Длительность</h1>
+                     <p class="section-wave__elem_subtitle">2 месяца / 8 неделья</p>
+                     <p class="section-wave__elem_lowertitle">2 раза в неделю по 2 часа</p>
+                  </div>
+
+                  <div class="section-wave__elem">
+                     <div class="section-wave__elem_icon">
+                        <i class="icon-wave icon-wave__cap"></i>
+                     </div>
+                     <h1 class="section-wave__elem_title">Уровень</h1>
+                     <p class="section-wave__elem_subtitle">Легкий</p>
+                     <p class="section-wave__elem_lowertitle">Можно начать с нуля</p>
+                  </div>
+
+                  <div class="section-wave__elem">
+                     <div class="section-wave__elem_icon">
+                        <i class="icon-wave icon-wave__coin"></i>
+                     </div>
+                     <h1 class="section-wave__elem_title">Стоимость</h1>
+                     <p class="section-wave__elem_subtitle">40 000 KZT/месяц</p>
+                  </div>
+
+               </div>
+               <div class="section-wave__img">
+                  <img src="img/bg-images/graph.svg" alt="Wave">
+               </div>
+            </div>
+         </section>
+
+         <section class="section p-md section-for">
+            <div class="section__flex_center container">
+               <h1 class="section__title text-center">Кому подойдет данный курс</h1>
+               <div class="section-for__list">
+
+                  <div class="section-for__elem">
+                     <div class="section-for__elem_img">
+                        <img src="img/for/newcomer.png" alt="Новичкам">
+                     </div>
+                     <div class="section-for__elem_text">
+                        <h1 class="section-for__elem_title">
+                           Новичкам
+                        </h1>
+                        <p class="section-for__elem_subtitle">
+                           Курс отлично подойдет тем, кто никогда не писал ни одного алгоритма, но хотел бы начать
+                           программировать.
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="section-for__elem">
+                     <div class="section-for__elem_img">
+                        <img src="img/for/junior.png" alt="Начинающим кодерам">
+                     </div>
+                     <div class="section-for__elem_text">
+                        <h1 class="section-for__elem_title">
+                           Начинающим кодерам
+                        </h1>
+                        <p class="section-for__elem_subtitle">
+                           Курс также подойдет тем, кто уже знаком с базовыми понятиями в кодинге, но не собирается
+                           останавливаться на достигнутом.
+                        </p>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+
+         <section class="section p-md">
+            <div class="container">
+               <h1 class="section__title">Также вы пройдете</h1>
+               <div class="section-what__list">
+
+                  <div class="section-what__elem">
+                     <div class="section-what__elem_img">
+                        <img src="img/what/python.svg" alt="Основные понятия">
+                     </div>
+                     <h1 class="section-what__elem_title">
+                        Основные понятия
+                     </h1>
+                     <p class="section-what__elem_subtitle">
+                        Мы научим вас синтаксису питона и основам программирования и алгоритмизации. Вы поймете, что
+                        такое переменные, как
+                        вводить и выводить данные. Научитесь писать свои алгоритмы.
+                     </p>
+                  </div>
+
+                  <div class="section-what__elem">
+                     <div class="section-what__elem_img">
+                        <img src="img/what/conditional.svg" alt="Условные операторы и циклы">
+                     </div>
+                     <h1 class="section-what__elem_title">
+                        Условные операторы и циклы
+                     </h1>
+                     <p class="section-what__elem_subtitle">
+                        Очень важно знать условные операторы и циклы для успешного построения сложных алгоритмов.
+                        Помните, чтобы делать сложные
+                        вещи, сначала нужно понять основы.
+                     </p>
+                  </div>
+
+                  <div class="section-what__elem">
+                     <div class="section-what__elem_img">
+                        <img src="img/what/list-tree.svg" alt="Массивы, списки и строки">
+                     </div>
+                     <h1 class="section-what__elem_title">
+                        Массивы, списки и строки
+                     </h1>
+                     <p class="section-what__elem_subtitle">
+                        Вы научитесь управлять массивами и строками. Вы сможете решать более сложные задачи, и начать
+                        разрабатывать свои
+                        маленькие приложения со своей «базой данных».
+                     </p>
+                  </div>
+
+                  <div class="section-what__elem">
+                     <div class="section-what__elem_img">
+                        <img src="img/what/function.svg" alt="Функции">
+                     </div>
+                     <h1 class="section-what__elem_title">
+                        Функции
+                     </h1>
+                     <p class="section-what__elem_subtitle">
+                        Вы научитесь оптимизировать ваш код благодаря функциям. И сделаете первый шаг в изучении более
+                        сложных вещей для
+                        создания реальных проектов!
+                     </p>
+                  </div>
+
+                  <div class="section-what__elem">
+                     <div class="section-what__elem_img">
+                        <img src="img/what/union.svg" alt="Основы ООП">
+                     </div>
+                     <h1 class="section-what__elem_title">
+                        Основы ООП
+                     </h1>
+                     <p class="section-what__elem_subtitle">
+                        Вы изучите все 4 основные концепции объектно-ориентированного программирования, которые
+                        фундаментально необходимы для
+                        разработки приложений и прочих систем.
+                     </p>
+                  </div>
+
+                  <div class="section-what__elem">
+                     <div class="section-what__elem_img">
+                        <img src="img/what/laptop.svg" alt="Графика">
+                     </div>
+                     <h1 class="section-what__elem_title">
+                        Графика
+                     </h1>
+                     <p class="section-what__elem_subtitle">
+                        А что насчет реального десктоп приложения? Вам в этом поможет графика в Питоне, которую вы
+                        будете изучать у нас и будете
+                        ее использовать для создания своих приложений
+                     </p>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+
+         <section class="section p-md section-knowledge">
+            <div class="section__flex_center container">
+               <h1 class="section__title text-center title-md">Знания - это актив, который невозможно потерять.</h1>
+               <button class="btn btn__rounded lg mt-md" data-toggle="modal" data-modal="record">
+                  Оставить заявку
+               </button>
+            </div>
+         </section>
+
+         <section class="section p-lg">
+            <div class="section-trainers container">
+               <h1 class="section__title text-center title-md">
+                  Кто будет вас тренировать
+               </h1>
+               <p class="section__subtitle text-center">
+                  Тренеры с большим опытом в преподавании и разработке проектов
+               </p>
+               <div class="section-trainers__list">
+                  <div class="section-trainers__elem">
+                     <div class="section-trainers__elem_avatar">
+                        <img src="img/avatars/Ilyas.png" alt="Ильяс Жуанышев">
+                     </div>
+                     <h1 class="section-trainers__elem_name">Ильяс Жуанышев</h1>
+                     <p class="section-trainers__elem_subjects">Java SE, Java EE, PHP</p>
+                  </div>
+                  <div class="section-trainers__elem">
+                     <div class="section-trainers__elem_avatar">
+                        <img src="img/avatars/Eldar.png" alt="Елдар Хасен">
+                     </div>
+                     <h1 class="section-trainers__elem_name">Елдар Хасен</h1>
+                     <p class="section-trainers__elem_subjects">Java SE, Java EE, PHP, Laravel Framework</p>
+                  </div>
+                  <div class="section-trainers__elem">
+                     <div class="section-trainers__elem_avatar">
+                        <img src="img/avatars/darkhan-junusov.png" alt="Дархан Жунусов">
+                     </div>
+                     <h1 class="section-trainers__elem_name">Дархан Жунусов</h1>
+                     <p class="section-trainers__elem_subjects">Python, Django, Javascript, Java, C++</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="section p-lg">
+            <div class="section__flex_center container">
+               <h1 class="section__title text-center">Доступные пакеты</h1>
+               <p class="section__subtitle text-center">Выбери свой пакет</p>
+               <div class="section__courses">
+
+                  <div class="section__courses_elem section-course pc">
+                     <h1 class="section-course__title">Индивидуально</h1>
+                     <h2 class="section-course__price">80 000 ₸/мес</h2>
+                     <ul class="section-course__info">
+                        <li class="section-course__info_elem">
+                           <i class="icon icon-courses icon-courses__check"></i>
+                           Доступ к материалам:&nbsp;<span class="bold">Да</span>
+                        </li>
+                        <li class="section-course__info_elem">
+                           <i class="icon icon-courses icon-courses__check"></i>
+                           Занятия:&nbsp;<span class="bold">от 2 до 3 часов</span>
+                        </li>
+                        <li class="section-course__info_elem">
+                           <i class="icon icon-courses icon-courses__check"></i>
+                           Своё расписание:&nbsp;<span class="bold">Да</span>
+                        </li>
+                        <li class="section-course__info_elem">
+                           <i class="icon icon-courses icon-courses__check"></i>
+                           Зянятий в неделю:&nbsp;<span class="bold">до 3</span>
+                        </li>
+                     </ul>
+                     <p class="section-course__program" hidden data-course="4">
+                        Индивидуально
+                     </p>
+                     <button class="btn btn__rounded md" data-toggle="modal" data-modal="course-details">
+                        Записаться
+                     </button>
+                  </div>
+
+                  <div class="section__courses_elem section-course pc">
+                     <h1 class="section-course__title">В группе</h1>
+                     <h2 class="section-course__price">40 000 ₸/мес</h2>
+                     <ul class="section-course__info">
+                        <li class="section-course__info_elem">
+                           <i class="icon icon-courses icon-courses__check"></i>
+                           Доступ к материалам:&nbsp;<span class="bold">Да</span>
+                        </li>
+                        <li class="section-course__info_elem">
+                           <i class="icon icon-courses icon-courses__check"></i>
+                           Занятия:&nbsp;<span class="bold">2 часа</span>
+                        </li>
+                        <li class="section-course__info_elem">
+                           <i class="icon icon-courses icon-courses__check"></i>
+                           В группе&nbsp;<span class="bold">7-8 человек</span>
+                        </li>
+                        <li class="section-course__info_elem">
+                           <i class="icon icon-courses icon-courses__check"></i>
+                           Своё расписание:&nbsp;<span class="bold">Нет</span>
+                        </li>
+                     </ul>
+                     <p class="section-course__program" hidden data-course="4">
+                        В оффлайн группе
+                     </p>
+                     <button class="btn btn__rounded md" data-toggle="modal" data-modal="course-details">
+                        Записаться
+                     </button>
+                  </div>
+
+                  <div class="section__courses_elem section-course pc">
+                     <h1 class="section-course__title">Online</h1>
+                     <h2 class="section-course__price">30 000 ₸/мес</h2>
+                     <ul class="section-course__info">
+                        <li class="section-course__info_elem">
+                           <i class="icon icon-courses icon-courses__check"></i>
+                           Доступ к материалам:&nbsp;<span class="bold">Да</span>
+                        </li>
+                        <li class="section-course__info_elem">
+                           <i class="icon icon-courses icon-courses__check"></i>
+                           Занятия:&nbsp;<span class="bold">2 часа</span>
+                        </li>
+                        <li class="section-course__info_elem">
+                           <i class="icon icon-courses icon-courses__check"></i>
+                           В группе&nbsp;<span class="bold">7-12 человек</span>
+                        </li>
+                        <li class="section-course__info_elem">
+                           <i class="icon icon-courses icon-courses__check"></i>
+                           Своё расписание:&nbsp;<span class="bold">Нет</span>
+                        </li>
+                     </ul>
+                     <p class="section-course__program" hidden data-course="4">
+                        Online
+                     </p>
+                     <button class="btn btn__rounded md" data-toggle="modal" data-modal="course-details">
+                        Записаться
+                     </button>
+                  </div>
+               </div>
+
+               <div id="course-details" class="modal section-course-modal">
+                  <button class="modal__btn close-btn">
+                     <i class="icon-ui icon-ui__cross"></i>
+                  </button>
+                  <div class="modal-content section-course-modal__content">
+                     <h1 class="section-course-modal__content_title">Программа курса</h1>
+                     <p class="section-course-modal__content_description"></p>
+                     <form class="section-course-modal__content_form">
+                        <h2 class="section-course-modal__content_subtitle">Запишись на курс прямо сейчас</h2>
+                        <p class="dn error-text"></p>
+                        <input name="name" type="text" placeholder="Ваше имя..." class="light">
+                        <input name="phone" type="tel" placeholder="+7" class="light" autocomplete="off">
+                        <input name="course" type="hidden" value="Not Selected">
+                        <p class="record-modal__content_caution">
+                           *Оставляя заявку, Вы даете согласие на обработку персональных данных
+                        </p>
+                        <button type="button" onclick="toSendRequest()" name="send" class="btn btn__rounded md">
+                           Отправить
+                        </button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="section p-lg">
+            <div class="section-contacts container">
+               <div class="section-contacts__info">
+                  <h1 class="section__title">Наши контакты</h1>
+                  <ul class="section-contacts__list">
+                     <li class="section-contacts__elem">
+                        <i class="icon icon-contacts icon-contacts__mail"></i>
+                        <a href="mailto:bitlabacademy@gmail.com">bitlabacademy@gmail.com</a>
+                     </li>
+                     <li class="section-contacts__elem">
+                        <i class="icon icon-contacts icon-contacts__phone"></i>
+                        <a href="tel:77479822311">+7 (747) 982 23 11</a>
+                     </li>
+                     <li class="section-contacts__elem">
+                        <i class="icon icon-contacts icon-contacts__phone"></i>
+                        <a href="tel:77000700101">+7 (700) 070 01 01</a>
+                     </li>
+                     <li class="section-contacts__elem">
+                        <i class="icon icon-contacts icon-contacts__location"></i>
+                        г. Алматы, ул.Айманова 126, 6-ой этаж
+                     </li>
+                  </ul>
+               </div>
+               <div class="section-contacts__map">
+                  <img src="img/map.png" alt="Map">
+               </div>
+            </div>
+         </section>
+
+      </main>
+      <footer class="footer">
+         <div class="footer__content container">
+            <div class="footer__content_logo"><img src="img/logo-dark.svg" alt="Logo"></div>
+            <ul class="footer__content_list">
+               <li class="footer__content_elem">&copy; 2020</li>
+               <li class="footer__content_elem">
+                  <a href="#">Связаться с нами</a>
+               </li>
+               <li class="footer__content_elem">
+                  <a href="#">Публичный договор-оферта</a>
+               </li>
+            </ul>
+            <ul class="footer__content_social">
+               <li class="footer__content_sn">
+                  <a href="#"><i class="icon-social icon-social__instagram"></i></a>
+               </li>
+               <li class="footer__content_sn">
+                  <a href="#"><i class="icon-social icon-social__facebook"></i></a>
+               </li>
+               <li class="footer__content_sn">
+                  <a href="#"><i class="icon-social icon-social__twitter"></i></a>
+               </li>
+               <li class="footer__content_sn">
+                  <a href="#"><i class="icon-social icon-social__telegram"></i></a>
+               </li>
+            </ul>
+         </div>
+      </footer>
+   </div>
+   <script src="js/jquery-3.5.1.min.js"></script>
+   <script src="js/jquery.maskedinput.min.js"></script>
+   <script src="js/slick.min.js"></script>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>
