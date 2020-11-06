@@ -130,7 +130,7 @@
                         </li>
                         <li class="section-course__info_elem">
                            <i class="icon icon-courses icon-courses__places"></i>
-                           Количество сутдентов:&nbsp;<span class="bold">10-12</span>
+                           Количество студентов:&nbsp;<span class="bold">10-12</span>
                         </li>
                      </ul>
                      <p class="section-course__program" hidden data-course="4">
@@ -172,7 +172,7 @@
                         </li>
                         <li class="section-course__info_elem">
                            <i class="icon icon-courses icon-courses__places"></i>
-                           Количество сутдентов:&nbsp;<span class="bold">10-12</span>
+                           Количество студентов:&nbsp;<span class="bold">10-12</span>
                         </li>
                      </ul>
                      <p class="section-course__program" hidden data-course="3">
@@ -216,7 +216,7 @@
                         </li>
                         <li class="section-course__info_elem">
                            <i class="icon icon-courses icon-courses__places"></i>
-                           Количество сутдентов:&nbsp;<span class="bold">10-12</span>
+                           Количество студентов:&nbsp;<span class="bold">10-12</span>
                         </li>
                      </ul>
                      <p class="section-course__program" hidden data-course="2">
