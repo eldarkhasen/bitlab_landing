@@ -107,7 +107,7 @@
                   <div class="section__courses_elem section-course">
                      <div class="section-course__icon"><img src="img/courses/cpp.png" alt="Java SE Icon"></div>
                      <h1 class="section-course__title">C++ basics</h1>
-                     <p class="section-course__subtitle">Основы алгоритмизации</p>
+                     <p class="section-course__subtitle">Основы кодинга на С++</p>
                      <h2 class="section-course__price">15 000 ₸/мес</h2>
                      <h3 class="section-course__price_prev">35 000 ₸/мес</h3>
                      <ul class="section-course__info">
@@ -331,8 +331,7 @@
                   </h1>
                   <p class="section-uni__subtitle">
                      Мы подготовили программу курса схожую с академическим силлабусом университетов в Казахстане. Пройдя
-                     курс вы можете быть
-                     уверены в успешной сдаче экзаменов. В группы отбираются только студенты!
+                     курс, вы можете быть уверены в успешной сдаче экзаменов. В группы отбираются только студенты!
                   </p>
                   <div class="section-uni__img md">
                      <img src="img/bg-images/uni.png" alt="Touching Person">
@@ -405,7 +404,7 @@
                         4. Строки, массивы и двумерные массивы
                      </button>
                      <p class="section-spoiler__elem_subtitle">
-                        Как только вы поймете как работать с циклами можно переходить к строкам и массивам. Разберем как
+                        Как только вы поймете как работать с циклами, можно переходить к строкам и массивам. Разберем как
                         устроены массивы,
                         узнаем как использовать массивы в проектах и в задачах
                      </p>
@@ -435,7 +434,7 @@
                         7. Алгоритмы и структуры данных
                      </button>
                      <p class="section-spoiler__elem_subtitle">
-                        Расскажем о техниках решения задач, какие алгоритмы можно применять, и рассмотрим структуры
+                        Расскажем о техниках решения задач, какие алгоритмы можно применять, и расскажем про структуры
                         данных
                      </p>
                   </div>
