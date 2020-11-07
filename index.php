@@ -245,6 +245,7 @@
                         <input name="name" type="text" placeholder="Ваше имя..." class="light">
                         <input name="phone" type="tel" placeholder="+7" class="light" autocomplete="off">
                         <input name="course" type="hidden" value="Not Selected">
+                        <input type="hidden" name="courseName">
                         <p class="record-modal__content_caution">
                            *Оставляя заявку, Вы даете согласие на обработку персональных данных
                         </p>

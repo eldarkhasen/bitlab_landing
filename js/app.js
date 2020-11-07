@@ -12,7 +12,8 @@ function toSendRequest() {
    $(phone).removeClass("error");
    $(caution).addClass("dn");
    $(caution).text("Заполните все поля формы!");
-
+   let courseName = $(form).find("*[name='course'] option:selected").html() ||
+      $(form).find("*[name='courseName']").val();
    let nameVal = $(name).val();
    let courseVal = $(course).val();
    let phoneVal = $(phone).val().replace("(", '')
@@ -36,14 +37,8 @@ function toSendRequest() {
                   $("#contact-result").html(data);
                   var myEle = document.getElementById("contact-success");
                   if (myEle) {
-                     let courseName = "";
-                     if (courseVal == 3) {
-                        courseName = "C++ для студентов";
-                     } else if (courseVal == 4) {
-                        courseName = "Python для студентов";
-                     } else if (courseVal == 2) {
-                        courseName = "Java для студентов";
-                     }
+                     let courseName = $(form).find("*[name='course'] option:selected").html() ||
+                        $(form).find("*[name='courseName]").val();
                      localStorage.setItem("name", nameVal);
                      localStorage.setItem("courseName", courseName);
                      form.reset();
@@ -155,9 +150,11 @@ $(document).ready(function () {
             let courseInfo = $(btn).parent().find(".section-course__program")[0];
             let program = $(courseInfo).text();
             let id = $(courseInfo).data("course");
+            let courseName = $(btn).parent().find(".section-course__title").html();
 
             modal.find(".section-course-modal__content_description").text(program);
             modal.find("*[name='course']").val(id);
+            modal.find("*[name='courseName']").val(courseName)
          }
 
          document.body.classList.add("lock");
