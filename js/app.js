@@ -25,6 +25,7 @@ function toSendRequest() {
       if (courseVal != null) {
          if (phoneVal !== "") {
             $("#loader").removeClass("dn");
+            document.body.classList.add("lock");
             $.post("php/contact.php",
                {
                   "name": nameVal,
@@ -35,18 +36,25 @@ function toSendRequest() {
                   $("#contact-result").html(data);
                   var myEle = document.getElementById("contact-success");
                   if (myEle) {
+                     let courseName = "";
+                     if (courseVal == 3) {
+                        courseName = "C++ для студентов";
+                     } else if (courseVal == 4) {
+                        courseName = "Python для студентов";
+                     } else if (courseVal == 2) {
+                        courseName = "Java для студентов";
+                     }
+                     localStorage.setItem("name", nameVal);
+                     localStorage.setItem("courseName", courseName);
                      form.reset();
                      window.setTimeout(function () {
                         location.href = "thanks.html"
                      }, 500);
-                  } else {
-                     $("#loader").addClass("dn");
-                     $(caution).text("Произошла ошибка! Повторите попытку!");
-                     $(caution).removeClass("dn");
                   }
                });
             setTimeout(() => {
                $("#loader").addClass("dn");
+               document.body.classList.remove("lock");
                $(caution).text("Произошла ошибка! Повторите попытку!");
                $(caution).removeClass("dn");
             }, timeout);
@@ -175,5 +183,15 @@ $(document).ready(function () {
 
    $("input[type='tel']").each(function () {
       $(this).mask("+7(999) 999-99-99");
+   });
+
+   $("#loader").addClass("dn");
+
+   $(".section-spoiler__elem_title").each(function () {
+      let btn = $(this);
+      btn.click(function () {
+         btn.toggleClass("active");
+         btn.next().toggleClass("active");
+      });
    });
 });
