@@ -40,9 +40,9 @@
                   <input name="name" type="text" placeholder="Ваше имя..." class="light">
                   <select name="course" class="light">
                      <option value="Not selected" disabled selected>Выберите курс</option>
-                     <option value="4">C++ basics</option>
-                     <option value="3">Java basics</option>
-                     <option value="2">Python basics</option>
+                     <option value="3">C++ basics</option>
+                     <option value="2">Java basics</option>
+                     <option value="4">Python basics</option>
                   </select>
                   <input name="phone" type="tel" placeholder="+7" class="light" autocomplete="off">
                   <p class="record-modal__content_caution">
