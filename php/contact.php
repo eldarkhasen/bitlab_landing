@@ -25,9 +25,9 @@ $e_subject = 'Вам пришла заявка от ' . $name . '.';
 // You can change this if you feel that you need to.
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 $course_name = "";
-if($course == 4){
+if($course == 3){
     $course_name = "C++ для студентов";
-}else if($course == 3){
+}else if($course == 4){
     $course_name = "Python для студентов";
 }else if($course==2){
     $course_name = "Java для студентов";

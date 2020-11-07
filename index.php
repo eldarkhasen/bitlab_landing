@@ -132,7 +132,7 @@
                            Количество студентов:&nbsp;<span class="bold">10-12</span>
                         </li>
                      </ul>
-                     <p class="section-course__program" hidden data-course="4">
+                     <p class="section-course__program" hidden data-course="3">
                         С++ - это отличный язык для изучения алгоритмизации.
                         <br>
                         Вы изучите следующие темы: условные операторы, циклы for/while/do-while, массивы,
@@ -174,7 +174,7 @@
                            Количество студентов:&nbsp;<span class="bold">10-12</span>
                         </li>
                      </ul>
-                     <p class="section-course__program" hidden data-course="3">
+                     <p class="section-course__program" hidden data-course="4">
                         Python - это отличный язык для изучения алгоритмизации.
                         <br>
                         Вы изучите следующие темы: условные операторы, циклы for/while/do-while, массивы,
