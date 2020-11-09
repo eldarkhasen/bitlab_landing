@@ -264,7 +264,7 @@
                <h1 class="section__title text-center title-md">
                   Позови друга и получи до
                   <span class="section__title_light">20% скидки</span>
-                  от суммы покупи
+                  от суммы покупки
                </h1>
             </div>
          </section>
