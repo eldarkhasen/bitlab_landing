@@ -727,10 +727,10 @@
             <ul class="footer__content_list">
                <li class="footer__content_elem">&copy; 2020</li>
                <li class="footer__content_elem">
-                  <a href="#">Связаться с нами</a>
+                  <a href="#" data-toggle="modal" data-modal="record">Связаться с нами</a>
                </li>
                <li class="footer__content_elem">
-                  <a href="#">Публичный договор-оферта</a>
+               <a href="https://drive.google.com/file/d/1yao4aGeaO1wZoEoM1hzihRLEITVtP-f4/view?usp=sharing" target="blank">Публичный договор-оферта></a>
                </li>
             </ul>
             <ul class="footer__content_social">
