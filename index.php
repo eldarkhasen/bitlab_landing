@@ -22,7 +22,7 @@
             <a href="/" class="nav__logo">
                <img src="img/logo.svg" alt="Logo">
             </a>
-            <a href="#" class="btn">Войти</a>
+            <a href="https://edu.bitlab.academy" target="_blank" class="btn">Войти</a>
          </div>
       </nav>
       <main class="page">
