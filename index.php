@@ -727,9 +727,6 @@
             <ul class="footer__content_list">
                <li class="footer__content_elem">&copy; 2020</li>
                <li class="footer__content_elem">
-                  <a href="#head_section">Связаться с нами</a>
-               </li>
-               <li class="footer__content_elem">
                <a href="https://drive.google.com/file/d/1yao4aGeaO1wZoEoM1hzihRLEITVtP-f4/view?usp=sharing" target="blank">Публичный договор-оферта</a>
                </li>
             </ul>
