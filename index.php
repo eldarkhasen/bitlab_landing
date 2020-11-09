@@ -59,7 +59,7 @@
             <div class="circle"></div>
          </div>
 
-         <header class="header details-bg">
+         <header class="header details-bg" id = "head_section ">
             <div class="header__content container ph-lg">
                <p class="header__uptitle">курсы для студентов</p>
                <h1 class="header__title">
@@ -727,10 +727,10 @@
             <ul class="footer__content_list">
                <li class="footer__content_elem">&copy; 2020</li>
                <li class="footer__content_elem">
-                  <a href="#" data-toggle="modal" data-modal="record">Связаться с нами</a>
+                  <a href="#head_section">Связаться с нами</a>
                </li>
                <li class="footer__content_elem">
-               <a href="https://drive.google.com/file/d/1yao4aGeaO1wZoEoM1hzihRLEITVtP-f4/view?usp=sharing" target="blank">Публичный договор-оферта></a>
+               <a href="https://drive.google.com/file/d/1yao4aGeaO1wZoEoM1hzihRLEITVtP-f4/view?usp=sharing" target="blank">Публичный договор-оферта</a>
                </li>
             </ul>
             <ul class="footer__content_social">
