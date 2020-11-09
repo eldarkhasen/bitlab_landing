@@ -735,16 +735,13 @@
             </ul>
             <ul class="footer__content_social">
                <li class="footer__content_sn">
-                  <a href="#"><i class="icon-social icon-social__instagram"></i></a>
+                  <a href="https://www.instagram.com/bitlabacademy/"><i class="icon-social icon-social__instagram"></i></a>
                </li>
                <li class="footer__content_sn">
-                  <a href="#"><i class="icon-social icon-social__facebook"></i></a>
+                  <a href="https://www.facebook.com/bitlab.kz/"><i class="icon-social icon-social__facebook"></i></a>
                </li>
                <li class="footer__content_sn">
-                  <a href="#"><i class="icon-social icon-social__twitter"></i></a>
-               </li>
-               <li class="footer__content_sn">
-                  <a href="#"><i class="icon-social icon-social__telegram"></i></a>
+                  <a href="https://t.me/eldarkhasen"><i class="icon-social icon-social__telegram"></i></a>
                </li>
             </ul>
          </div>
