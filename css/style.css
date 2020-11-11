@@ -224,6 +224,7 @@ body.lock {
   font-size: 16px;
   line-height: 24px;
   border-radius: 5px;
+  white-space: nowrap;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;

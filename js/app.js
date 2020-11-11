@@ -16,11 +16,7 @@ function toSendRequest(event) {
       $(form).find("*[name='courseName']").val();
    let nameVal = $(name).val();
    let courseVal = $(course).val();
-   let phoneVal = $(phone).val().replace("(", '')
-      .replaceAll(")", '')
-      .replaceAll("-", '')
-      .replaceAll(" ", '')
-      .replaceAll("+", '');
+   let phoneVal = $(phone).val().replace(/\D/g, '');
 
    if (nameVal !== "") {
       if (courseVal != null) {
