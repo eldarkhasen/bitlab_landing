@@ -38,7 +38,7 @@ function toSendRequest() {
                   var myEle = document.getElementById("contact-success");
                   if (myEle) {
                      let courseName = $(form).find("*[name='course'] option:selected").html() ||
-                        $(form).find("*[name='courseName]").val();
+                        $(form).find("*[name='courseName']").val();
                      localStorage.setItem("name", nameVal);
                      localStorage.setItem("courseName", courseName);
                      form.reset();
