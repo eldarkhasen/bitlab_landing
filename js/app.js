@@ -1,4 +1,4 @@
-function toSendRequest() {
+function toSendRequest(event) {
    let form = $(event.target).parent()[0];
    let name = $(form).find("*[name='name']")[0];
    let course = $(form).find("*[name='course']")[0];
@@ -38,7 +38,7 @@ function toSendRequest() {
                   var myEle = document.getElementById("contact-success");
                   if (myEle) {
                      let courseName = $(form).find("*[name='course'] option:selected").html() ||
-                        $(form).find("*[name='courseName']").val();
+                        $(form).find("*[name='courseName]").val();
                      localStorage.setItem("name", nameVal);
                      localStorage.setItem("courseName", courseName);
                      form.reset();
@@ -68,6 +68,12 @@ function toSendRequest() {
 }
 
 $(document).ready(function () {
+   $("button[data-target='submit']").each(function () {
+      $(this).click(function (event) {
+         toSendRequest(event);
+      });
+   });
+
    $('.section-reviews__slider').slick({
       arrows: false,
       dots: true,

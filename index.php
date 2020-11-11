@@ -7,8 +7,7 @@
    <meta name="format-detection" content="telephone=no">
    <link rel="stylesheet" href="css/style.min.css">
    <link rel="shortcut icon" href="favicon.ico">
-   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="msapplication-navbutton-color" content="#0accda">
    <meta name="apple-mobile-web-app-status-bar-style" content="#0accda">
@@ -48,7 +47,7 @@
                   <p class="record-modal__content_caution">
                      *Оставляя заявку, Вы даете согласие на обработку персональных данных
                   </p>
-                  <button type="button" onclick="toSendRequest()" name="send" class="btn btn__rounded md">
+                  <button type="button" data-target="submit" name="send" class="btn btn__rounded md">
                      Отправить
                   </button>
                </form>
@@ -59,7 +58,7 @@
             <div class="circle"></div>
          </div>
 
-         <header class="header details-bg" id = "head_section ">
+         <header class="header details-bg" id="head_section ">
             <div class="header__content container ph-lg">
                <p class="header__uptitle">курсы для студентов</p>
                <h1 class="header__title">
@@ -249,7 +248,7 @@
                         <p class="record-modal__content_caution">
                            *Оставляя заявку, Вы даете согласие на обработку персональных данных
                         </p>
-                        <button type="button" onclick="toSendRequest()" name="send" class="btn btn__rounded md">
+                        <button type="button" data-target="submit" name="send" class="btn btn__rounded md">
                            Отправить
                         </button>
                      </form>
@@ -304,8 +303,7 @@
                            <img src="img/howto/player.png" alt="Поддержка">
                         </div>
                      </div>
-                     <button class="section-howto__btn-expand" data-toggle="modal" data-modal="section-howto-fullscreen"
-                        data-modal-type="fullscreen-img">
+                     <button class="section-howto__btn-expand" data-toggle="modal" data-modal="section-howto-fullscreen" data-modal-type="fullscreen-img">
                         <i class="icon-ui icon-ui__expand"></i>
                         <span class="section-howto__btn-expand_text">На весь экран</span>
                      </button>
@@ -315,8 +313,7 @@
                      <button class="modal__btn close-btn">
                         <i class="icon-ui icon-ui__cross"></i>
                      </button>
-                     <img class="section-howto-fullscreen__img modal-content" src="img/howto/lecture.png"
-                        alt="Fullscreen Img">
+                     <img class="section-howto-fullscreen__img modal-content" src="img/howto/lecture.png" alt="Fullscreen Img">
                   </div>
 
                </div>
@@ -727,7 +724,7 @@
             <ul class="footer__content_list">
                <li class="footer__content_elem">&copy; 2020</li>
                <li class="footer__content_elem">
-               <a href="https://drive.google.com/file/d/1yao4aGeaO1wZoEoM1hzihRLEITVtP-f4/view?usp=sharing" target="blank">Публичный договор-оферта</a>
+                  <a href="https://drive.google.com/file/d/1yao4aGeaO1wZoEoM1hzihRLEITVtP-f4/view?usp=sharing" target="blank">Публичный договор-оферта</a>
                </li>
             </ul>
             <ul class="footer__content_social">
@@ -749,19 +746,26 @@
    <script src="js/slick.min.js"></script>
    <script src="js/app.min.js"></script>
    <!-- Yandex.Metrika counter -->
-   <script type="text/javascript" >
-      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-         m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   <script type="text/javascript">
+      (function(m, e, t, r, i, k, a) {
+         m[i] = m[i] || function() {
+            (m[i].a = m[i].a || []).push(arguments)
+         };
+         m[i].l = 1 * new Date();
+         k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+      })
       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
       ym(69096853, "init", {
-         clickmap:true,
-         trackLinks:true,
-         accurateTrackBounce:true,
-         webvisor:true
+         clickmap: true,
+         trackLinks: true,
+         accurateTrackBounce: true,
+         webvisor: true
       });
    </script>
-   <noscript><div><img src="https://mc.yandex.ru/watch/69096853" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+   <noscript>
+      <div><img src="https://mc.yandex.ru/watch/69096853" style="position:absolute; left:-9999px;" alt="" /></div>
+   </noscript>
    <!-- /Yandex.Metrika counter -->
 </body>
 
