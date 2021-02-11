@@ -1,4 +1,4 @@
-function toSendRequest() {
+function toSendRequest(event) {
    let form = $(event.target).parent()[0];
    let name = $(form).find("*[name='name']")[0];
    let course = $(form).find("*[name='course']")[0];
@@ -16,11 +16,7 @@ function toSendRequest() {
       $(form).find("*[name='courseName']").val();
    let nameVal = $(name).val();
    let courseVal = $(course).val();
-   let phoneVal = $(phone).val().replace("(", '')
-      .replaceAll(")", '')
-      .replaceAll("-", '')
-      .replaceAll(" ", '')
-      .replaceAll("+", '');
+   let phoneVal = $(phone).val().replace(/\D/g, '');
 
    if (nameVal !== "") {
       if (courseVal != null) {
@@ -68,6 +64,12 @@ function toSendRequest() {
 }
 
 $(document).ready(function () {
+   $("button[data-target='submit']").each(function () {
+      $(this).click(function (event) {
+         toSendRequest(event);
+      });
+   });
+
    $('.section-reviews__slider').slick({
       arrows: false,
       dots: true,
